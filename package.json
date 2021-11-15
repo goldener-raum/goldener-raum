@@ -1,7 +1,17 @@
 {
   "name": "goldener-raum",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.x",
+    "npm": "7.x"
+  },
   "private": true,
+  "config": {
+    "nuxt": {
+      "host": "localhost",
+      "port": 3000
+    }
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
