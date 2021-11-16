@@ -1,10 +1,10 @@
 <template>
-  <section>
+  <section style="margin-top: 5rem; margin-bottom: 15rem">
     <div style="position: relative">
       <Blob
         :background="'#f4bd51'"
-        :left="-30"
-        :top="-10"
+        :left="-25"
+        :top="-60"
         :animationTime="50"
       />
     </div>
@@ -57,10 +57,7 @@
           </w-card>
         </w-flex>
       </div>
-      <w-image
-        class="grow ma8"
-        :src="`${$config.baseUrl}/landingpage/goldener-raum-01.png`"
-      />
+      <CustomImage :filename="'goldener-raum-01.png'" />
     </w-flex>
   </section>
 </template>

@@ -1,6 +1,12 @@
 <template>
-  <section style="margin-top: 10rem; margin-bottom: 10rem; position: relative">
-    <Blob :background="'#33408e'" :left="-30" :top="-10" :animationTime="50" />
+  <section style="margin-top: 15rem; margin-bottom: 15rem; position: relative">
+    <Blob
+      :background="'#33408e'"
+      :left="-15"
+      :top="-60"
+      :animationTime="50"
+      :blobShape="2"
+    />
     <h2 class="headline mb12 ml8" style="font-size: 3rem">
       Einige unserer AktivistInnen
     </h2>

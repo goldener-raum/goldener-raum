@@ -1,9 +1,9 @@
 <template>
   <div>
-    <Introduction style="margin-top: 5rem; margin-bottom: 5rem" />
-    <WhoWeAre style="margin-bottom: 10rem" />
+    <Introduction />
+    <WhoWeAre />
     <Activists />
-    <SupporterList />
+    <Subscribe />
   </div>
 </template>
 

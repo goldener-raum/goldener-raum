@@ -1,21 +1,19 @@
 <template>
-  <section>
+  <section style="margin-bottom: 15rem">
     <div style="position: relative">
       <Blob
         :background="'#217c6f'"
-        :right="-30"
-        :top="-10"
+        :right="-70"
+        :top="-60"
         :animationTime="50"
+        :blobShape="2"
       />
     </div>
     <w-flex class="basis-zero mb8">
-      <w-image
-        class="grow ma8"
-        :src="`${$config.baseUrl}/landingpage/goldener-raum-03.png`"
-      />
+      <CustomImage :filename="'goldener-raum-03.png'" />
 
       <div class="grow ma8">
-        <h2 class="headline mt8 mb4" style="font-size: 3rem">Wer wir sind</h2>
+        <h2 class="headline mt8 mb4" style="font-size: 3rem">Wer sind wir?</h2>
 
         <div>
           <p class="py8 title2">
