@@ -1,13 +1,13 @@
 <template>
-  <section style="margin-top: 15rem; margin-bottom: 15rem; position: relative">
+  <section style="margin-bottom: 15rem; position: relative">
     <Blob
       :background="'#33408e'"
-      :left="-15"
-      :top="-60"
       :animationTime="50"
-      :blobShape="2"
+      :blobShape="4"
+      :left="25"
+      :top="50"
     />
-    <h2 class="headline mb12 ml8" style="font-size: 3rem">
+    <h2 class="headline mb12 ml8" style="font-size: 3rem; width: 50%">
       Einige unserer AktivistInnen
     </h2>
     <Slider />

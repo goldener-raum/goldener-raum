@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="ma12">
     <Introduction />
     <WhoWeAre />
     <Activists />

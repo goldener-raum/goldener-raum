@@ -1,20 +1,18 @@
 <template>
   <section style="margin-bottom: 15rem">
-    <div style="position: relative">
-      <Blob
-        :background="'#217c6f'"
-        :right="-70"
-        :top="-60"
-        :animationTime="50"
-        :blobShape="2"
-      />
-    </div>
     <w-flex class="basis-zero mb8">
       <CustomImage :filename="'goldener-raum-03.png'" />
 
-      <div class="grow ma8">
-        <h2 class="headline mt8 mb4" style="font-size: 3rem">Wer sind wir?</h2>
+      <div class="grow ma8" style="position: relative">
+        <Blob
+          :background="'#217c6f'"
+          :left="50"
+          :top="50"
+          :animationTime="50"
+          :blobShape="3"
+        />
 
+        <h2 class="headline mt8 mb4" style="font-size: 3rem">Wer sind wir?</h2>
         <div>
           <p class="py8 title2">
             Im Generationenfonds organisieren sich junge Aktivistinnen und

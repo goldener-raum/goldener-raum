@@ -1,16 +1,15 @@
 <template>
   <section style="margin-top: 5rem; margin-bottom: 15rem">
-    <div style="position: relative">
-      <Blob
-        :background="'#f4bd51'"
-        :left="-25"
-        :top="-60"
-        :animationTime="50"
-      />
-    </div>
+    <w-flex class="basis-zero">
+      <div class="grow ma8" style="position: relative">
+        <Blob
+          :background="'#f4bd51'"
+          :left="50"
+          :top="50"
+          :animationTime="50"
+          :blobShape="3"
+        />
 
-    <w-flex class="basis-zero mb8">
-      <div class="grow ma8">
         <h2 class="headline mb12" style="font-size: 3rem">
           Betritt den goldenen Raum
         </h2>
@@ -57,7 +56,7 @@
           </w-card>
         </w-flex>
       </div>
-      <CustomImage :filename="'goldener-raum-01.png'" />
+      <CustomImage class="grow" :filename="'goldener-raum-01.png'" />
     </w-flex>
   </section>
 </template>
