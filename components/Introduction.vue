@@ -1,10 +1,15 @@
 <template>
   <section>
     <div style="position: relative">
-      <BlobGold />
+      <Blob
+        :background="'#f4bd51'"
+        :left="-30"
+        :top="-10"
+        :animationTime="50"
+      />
     </div>
 
-    <w-flex class="basis-zero mb12">
+    <w-flex class="basis-zero mb8">
       <div class="grow ma8">
         <h2 class="headline mb12" style="font-size: 3rem">
           Betritt den goldenen Raum

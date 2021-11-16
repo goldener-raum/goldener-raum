@@ -1,9 +1,24 @@
 <template>
-  <div class="blob"></div>
+  <div
+    class="blob"
+    :style="{
+      background,
+      left: `${left}vw`,
+      right: `${right}vw`,
+      top: `${top}vh`,
+    }"
+  ></div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    background: String,
+    left: Number,
+    right: Number,
+    top: Number,
+  },
+};
 </script>
 
 <style scoped>
@@ -11,13 +26,10 @@ export default {};
   z-index: -1;
   display: block;
   position: absolute;
-  right: -30vw;
-  top: -10vh;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
-  background: #f4bd51;
   background-size: 500% 100%;
   animation: blobber 300s 0s linear infinite,
     cobler 300s 0s linear infinite alternate;
