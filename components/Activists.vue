@@ -7,7 +7,7 @@
       :left="25"
       :top="50"
     />
-    <h2 class="headline mb12 ml8" style="font-size: 3rem; width: 50%">
+    <h2 class="headline mb12 ml8 white" style="font-size: 3rem; width: 50%">
       Einige unserer AktivistInnen
     </h2>
     <Slider />

@@ -1,7 +1,18 @@
 <template>
   <section style="margin-bottom: 15rem">
-    <w-flex class="basis-zero mb8">
-      <CustomImage :filename="'goldener-raum-03.png'" />
+    <h2 class="headline mt8 mb4 mr8 text-right white" style="font-size: 3rem">
+      Wer sind wir?
+    </h2>
+    <w-flex
+      class="basis-zero mb8"
+      :column="$waveui.breakpoint.sm || $waveui.breakpoint.md"
+    >
+      <div
+        class="grow ma8"
+        v-if="!($waveui.breakpoint.sm || $waveui.breakpoint.md)"
+      >
+        <CustomImage :filename="'goldener-raum-03.png'" />
+      </div>
 
       <div class="grow ma8" style="position: relative">
         <Blob
@@ -12,9 +23,8 @@
           :blobShape="3"
         />
 
-        <h2 class="headline mt8 mb4" style="font-size: 3rem">Wer sind wir?</h2>
-        <div>
-          <p class="py8 title2">
+        <div class="white">
+          <p class="title2">
             Im Generationenfonds organisieren sich junge Aktivistinnen und
             Aktivisten in Gruppen und verfügen über ein gemeinsames Budgets. Es
             geht um Potenzialentfaltung, um das Erleben von Selbstwirksamkeit
@@ -35,6 +45,12 @@
             macht.
           </p>
         </div>
+      </div>
+      <div
+        class="grow ma8"
+        v-if="$waveui.breakpoint.sm || $waveui.breakpoint.md"
+      >
+        <CustomImage :filename="'goldener-raum-03.png'" />
       </div>
     </w-flex>
   </section>

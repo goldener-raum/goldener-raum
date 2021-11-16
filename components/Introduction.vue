@@ -1,6 +1,12 @@
 <template>
-  <section style="margin-top: 5rem; margin-bottom: 15rem">
-    <w-flex class="basis-zero">
+  <section style="margin-top: 5rem; margin-bottom: 10rem">
+    <h2 class="headline mb4 ml8" style="font-size: 3rem">
+      Betritt den goldenen Raum
+    </h2>
+    <w-flex
+      class="basis-zero"
+      :column="$waveui.breakpoint.sm || $waveui.breakpoint.md"
+    >
       <div class="grow ma8" style="position: relative">
         <Blob
           :background="'#f4bd51'"
@@ -9,10 +15,6 @@
           :animationTime="50"
           :blobShape="3"
         />
-
-        <h2 class="headline mb12" style="font-size: 3rem">
-          Betritt den goldenen Raum
-        </h2>
         <h2 class="title1">
           <w-icon class="mr1" color="primary"> mdi mdi-arrow-right </w-icon>Ein
           Promille deines Einkommens.
@@ -56,7 +58,9 @@
           </w-card>
         </w-flex>
       </div>
-      <CustomImage class="grow" :filename="'goldener-raum-01.png'" />
+      <div class="grow ma8">
+        <CustomImage :filename="'goldener-raum-01.png'" />
+      </div>
     </w-flex>
   </section>
 </template>

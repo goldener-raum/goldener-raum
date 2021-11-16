@@ -1,10 +1,8 @@
 <template>
   <w-image
-    class="grow ma8"
     :transition="'slide-fade-up'"
     :src="imageSource"
-    :width="1000"
-    :height="600"
+    :ratio="600 / 1000"
   />
 </template>
 
