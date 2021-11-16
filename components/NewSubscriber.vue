@@ -1,6 +1,6 @@
 <template>
   <w-card class="ma8 grow">
-    <w-form @success="saveNewSubscriber()">
+    <w-form @success="saveNewSubscriber()" v-model="valid">
       <w-input
         :validators="[validators.required]"
         class="mb4"
@@ -19,11 +19,19 @@
         label="E-Mail"
         v-model="newSub.email"
       />
-      <w-flex>
+      <w-flex class="basis-zero">
+        <w-button
+          :disabled="!(newSub.surname || newSub.lastname || newSub.email)"
+          bg-color="error"
+          type="reset"
+          class="grow mr3"
+          :ref="'resetSubForm'"
+          >Abbrechen</w-button
+        >
         <w-button
           :disabled="!newSub.surname || !newSub.lastname || !newSub.email"
           type="submit"
-          class="grow"
+          class="grow ml3"
           >In die Liste eintragen</w-button
         >
       </w-flex>
@@ -40,7 +48,7 @@ export default {
     return {
       newSub: {},
       validators: {
-        required: (value) => !!value || 'This field is required',
+        required: (value) => !!value || 'Dieses Feld muss ausgefüllt werden.',
         validateEmail: (email) => {
           const mailformat =
             /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -48,15 +56,16 @@ export default {
           return isValid || 'Bitte eine gültige Email angeben!';
         },
       },
+      valid: null,
     };
   },
   methods: {
     initializeNewSub() {
-      this.newSub = {
-        surname: '',
-        lastname: '',
-        email: '',
-      };
+      this.$refs.resetSubForm.$el.focus();
+      this.$refs.resetSubForm.$el.blur();
+      setTimeout(() => {
+        this.$refs.resetSubForm.$el.click();
+      }, 1);
     },
     async saveNewSubscriber() {
       const subscribersRef = this.$fire.firestore.collection('subscribers');
@@ -67,8 +76,18 @@ export default {
           lastname: this.newSub.lastname,
           email: this.newSub.email,
         });
+        this.initializeNewSub();
+        this.$waveui.notify({
+          message: 'Erfolgreich eingetragen!.',
+          type: 'success',
+          timeout: 3000,
+        });
       } catch (e) {
-        alert(e);
+        this.$waveui.notify({
+          message: 'Fehler beim eintragen:' + e,
+          type: 'error',
+          timeout: 3000,
+        });
         return;
       }
     },

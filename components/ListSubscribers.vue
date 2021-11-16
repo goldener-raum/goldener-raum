@@ -1,5 +1,5 @@
 <template>
-  <w-card class="ma8 grow">
+  <w-card class="ma8 grow" style="height: 11rem; overflow-y: auto">
     <w-flex
       v-if="subscribers[0]"
       v-for="(subscriber, sIndex) in subscribers"
