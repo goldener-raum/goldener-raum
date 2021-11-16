@@ -28,7 +28,21 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@wave-ui/nuxt'],
+  buildModules: [
+    [
+      '@wave-ui/nuxt',
+      {
+        colors: {
+          primary: '#565656',
+          secondary: '#0bd491',
+          success: '#0bd491',
+          info: '#00B0E0',
+          error: '#D4320B',
+          warning: '#EBC20C',
+        },
+      },
+    ],
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [['@nuxtjs/firebase']],
