@@ -1,16 +1,33 @@
 <template>
   <w-card class="ma8 grow">
-    <w-input class="mb4" label="Vorname" v-model="newSub.surname" />
-    <w-input class="mb4" label="Nachname" v-model="newSub.lastname" />
-    <w-input class="mb4" label="E-Mail" v-model="newSub.email" />
-    <w-flex>
-      <w-button
-        :disabled="!newSub.surname || !newSub.lastname || !newSub.email"
-        class="grow"
-        @click="saveNewSubscriber()"
-        >In die Liste eintragen</w-button
-      >
-    </w-flex>
+    <w-form @success="saveNewSubscriber()">
+      <w-input
+        :validators="[validators.required]"
+        class="mb4"
+        label="Vorname"
+        v-model="newSub.surname"
+      />
+      <w-input
+        :validators="[validators.required]"
+        class="mb4"
+        label="Nachname"
+        v-model="newSub.lastname"
+      />
+      <w-input
+        :validators="[validators.required, validators.validateEmail]"
+        class="mb4"
+        label="E-Mail"
+        v-model="newSub.email"
+      />
+      <w-flex>
+        <w-button
+          :disabled="!newSub.surname || !newSub.lastname || !newSub.email"
+          type="submit"
+          class="grow"
+          >In die Liste eintragen</w-button
+        >
+      </w-flex>
+    </w-form>
   </w-card>
 </template>
 
@@ -22,6 +39,15 @@ export default {
   data() {
     return {
       newSub: {},
+      validators: {
+        required: (value) => !!value || 'This field is required',
+        validateEmail: (email) => {
+          const mailformat =
+            /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+          const isValid = email.match(mailformat);
+          return isValid || 'Bitte eine gültige Email angeben!';
+        },
+      },
     };
   },
   methods: {

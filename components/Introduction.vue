@@ -2,9 +2,18 @@
   <section>
     <w-flex class="basis-zero mb12">
       <div class="grow ma8">
-        <h2 class="title1">Ein Promille deines Einkommens.</h2>
-        <h2 class="title1">Unterstützung auf Augenhöhe.</h2>
-        <h2 class="title1">Werde Teil des goldenen Raums.</h2>
+        <h2 class="title1">
+          <w-icon class="mr1" color="primary"> mdi mdi-arrow-right </w-icon>Ein
+          Promille deines Einkommens.
+        </h2>
+        <h2 class="title1">
+          <w-icon class="mr1" color="primary"> mdi mdi-arrow-right </w-icon
+          >Unterstützung auf Augenhöhe.
+        </h2>
+        <h2 class="title1">
+          <w-icon class="mr1" color="primary"> mdi mdi-arrow-right </w-icon
+          >Werde Teil des goldenen Raums.
+        </h2>
 
         <p class="py8 title2">
           Hier unterstützen sich Menschen gegenseitig bei ihrem Kampf für eine
