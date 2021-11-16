@@ -77,17 +77,9 @@ export default {
           email: this.newSub.email,
         });
         this.initializeNewSub();
-        this.$waveui.notify({
-          message: 'Erfolgreich eingetragen!.',
-          type: 'success',
-          timeout: 3000,
-        });
+        this.$waveui.notify('Erfolgreich eingetragen!.', 'success', 3000);
       } catch (e) {
-        this.$waveui.notify({
-          message: 'Fehler beim eintragen:' + e,
-          type: 'error',
-          timeout: 3000,
-        });
+        this.$waveui.notify('Fehler beim eintragen:' + e, 'error', 3000);
         return;
       }
     },
