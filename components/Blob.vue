@@ -1,10 +1,10 @@
 <template>
   <div
     class="tk-blob"
-    :style="`--fill: ${background}; --amount: 0.1; --time: ${animationTime}s; left: ${left}%; right: ${right}%; top: ${top}%`"
+    :style="`--fill: ${background}; --amount: 0.1; --time: ${animationTime}s; left: ${left}%; right: ${right}%; top: ${top}%; width: ${width}rem; height: ${height}rem`"
   >
     <svg
-      v-if="!blobShape"
+      v-if="blobShape === 0"
       id="10015.io"
       viewBox="0 0 480 480"
       xmlns="http://www.w3.org/2000/svg"
@@ -62,6 +62,30 @@
         d="M357.5,281Q322,322,281,365Q240,408,168.5,395.5Q97,383,77.5,311.5Q58,240,92,183Q126,126,183,126.5Q240,127,306.5,117Q373,107,383,173.5Q393,240,357.5,281Z"
       />
     </svg>
+
+    <svg
+      v-if="blobShape === 5"
+      id="10015.io"
+      viewBox="0 0 480 480"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <path
+        d="M437.5,296Q414,352,371,392Q328,432,270.5,429Q213,426,185,381Q157,336,139,305.5Q121,275,91.5,231.5Q62,188,84.5,137Q107,86,161,76Q215,66,257.5,87.5Q300,109,357,118.5Q414,128,437.5,184Q461,240,437.5,296Z"
+      />
+    </svg>
+
+    <svg
+      v-if="blobShape === 6"
+      id="10015.io"
+      viewBox="0 0 480 480"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <path
+        d="M427.5,298Q378,356,323,378Q268,400,197.5,418.5Q127,437,95.5,370.5Q64,304,56.5,237.5Q49,171,92.5,115.5Q136,60,202.5,67.5Q269,75,312,109.5Q355,144,416,192Q477,240,427.5,298Z"
+      />
+    </svg>
   </div>
 </template>
 
@@ -76,6 +100,8 @@ export default {
     top: Number,
     blobShape: Number,
     animationTime: Number,
+    height: Number,
+    width: Number,
   },
 };
 </script>
@@ -85,8 +111,6 @@ export default {
   z-index: -1;
   display: block;
   position: absolute;
-  width: 100rem;
-  height: 100rem;
   transform: translate(-50%, -50%);
 }
 </style>
