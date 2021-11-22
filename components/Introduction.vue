@@ -5,10 +5,7 @@
     </AnotherBlobSection>
     <div class="width: 100%">
       <div style="margin: 10rem 4rem 7.5rem 4rem">
-        <h2
-          class="headline pb8"
-          :style="`font-size: ${$waveui.breakpoint.width / 30}px;`"
-        >
+        <h2 class="headline pb8" :style="getFontSize">
           Wir sind die Aktivist*innen des goldenen Raums.
         </h2>
 
@@ -46,7 +43,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    getFontSize() {
+      if (this.$waveui.breakpoint.width / 30 >= 22) {
+        return `font-size: ${this.$waveui.breakpoint.width / 30}px;`;
+      }
+      return `font-size: 22px;`;
+    },
+  },
+};
 </script>
 
 <style scoped></style>

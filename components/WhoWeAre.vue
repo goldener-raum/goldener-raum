@@ -3,7 +3,10 @@
     <div class="width: 100%">
       <div style="margin: 5rem 4rem 7.5rem 4rem">
         <w-flex basis-zero>
-          <div class="grow" />
+          <div
+            class="grow"
+            v-if="!$waveui.breakpoint.xs && !$waveui.breakpoint.sm"
+          />
           <p class="title2 grow">
             Wir organisieren uns in Gruppen und verfügen über ein gemeinsames
             Budget. Es geht um Potenzialentfaltung, um das Erleben von
@@ -19,7 +22,7 @@
       <div style="margin: 5rem 4rem">
         <w-flex basis-zero>
           <div class="grow">
-            <h2 class="headline mt8 mb4 mr8 white" style="font-size: 3rem">
+            <h2 class="headline mt8 mb4 mr8 white" :style="getFontSize">
               Unterstützung auf Augenhöhe.
             </h2>
             <p class="white py4 title2 grow">
@@ -46,7 +49,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    getFontSize() {
+      if (this.$waveui.breakpoint.width / 30 >= 25) {
+        return `font-size: ${this.$waveui.breakpoint.width / 30}px;`;
+      }
+      return `font-size: 25px;`;
+    },
+  },
+};
 </script>
 
 <style scoped></style>

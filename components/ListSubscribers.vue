@@ -1,6 +1,6 @@
 <template>
   <w-card
-    class="ma8 grow"
+    class="my8 grow"
     style="height: 11rem; overflow-y: auto; background: white"
   >
     <div

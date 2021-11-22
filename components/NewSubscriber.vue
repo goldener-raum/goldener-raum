@@ -1,5 +1,5 @@
 <template>
-  <w-card class="ma8 grow" style="background: white">
+  <w-card class="my8 grow" style="background: white">
     <w-form @success="saveNewSubscriber()" v-model="valid">
       <w-input
         :validators="[validators.required]"
