@@ -1,8 +1,7 @@
 <template>
-  <div class="ma12">
+  <div>
     <Introduction />
     <WhoWeAre />
-    <Activists />
     <Subscribe />
   </div>
 </template>
@@ -10,3 +9,4 @@
 <script>
 export default {};
 </script>
+<style scoped></style>

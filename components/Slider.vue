@@ -1,5 +1,5 @@
 <template>
-  <VueperSlides class="ma8 grow">
+  <VueperSlides class="grow">
     <VueperSlide v-for="(slide, i) in slides" :key="i" :image="slide.image">
       <template #content>
         <h2 class="text-right mt3 mr6">{{ slide.title }}</h2>

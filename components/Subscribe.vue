@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2 class="headline mb4 mr8 text-right" style="font-size: 3rem">
+    <h2 class="headline mt12 mb4 mr8 text-right" style="font-size: 3rem">
       Trag dich ein!
     </h2>
     <w-flex
