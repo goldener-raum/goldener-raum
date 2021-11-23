@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pa2" style="background: white">
     <!-- twingle -->
     <iframe
       src="https://spenden.twingle.de/goldener-raum/goldener-raum/tw619cb801d109e/widget"

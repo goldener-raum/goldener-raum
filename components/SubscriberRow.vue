@@ -1,13 +1,13 @@
 <template>
-  <w-flex>
-    <w-icon class="mr3 mt1" sm color="primary"> mdi mdi-star </w-icon>
-    <p class="mr1">{{ subscriber.surname }}</p>
-    <p class="mr4">{{ subscriber.lastname }}</p>
-
-    <div class="grow" />
-    <p class="mr4 mt1 caption">{{ elapsedTime }}</p>
-    <!-- <p class="mr1">{{ subscriber.email }}</p> -->
-  </w-flex>
+  <div>
+    <w-flex v-if="!subscriber.useNickname" class="justify-center">
+      <p>{{ subscriber.surname }}</p>
+      <p class="ml2">{{ subscriber.lastname }}</p>
+    </w-flex>
+    <w-flex v-else class="justify-center">
+      <p>{{ subscriber.nickname }}</p>
+    </w-flex>
+  </div>
 </template>
 
 <script>
@@ -34,13 +34,13 @@ export default {
         const years = Math.floor(months / 12);
 
         if (years > 0) {
-          return `vor ${years} ${years === 1 ? 'Jahr' : 'Jahre'}`;
+          return `vor ${years} ${years === 1 ? 'Jahr' : 'Jahren'}`;
         } else if (months > 0) {
-          return `vor ${months} ${months === 1 ? 'Monat' : 'Monate'}`;
+          return `vor ${months} ${months === 1 ? 'Monat' : 'Monaten'}`;
         } else if (weeks > 0) {
           return `vor ${weeks} ${weeks === 1 ? 'Woche' : 'Wochen'}`;
         } else if (days > 0) {
-          return `vor ${days} ${days === 1 ? 'Tag' : 'Tage'}`;
+          return `vor ${days} ${days === 1 ? 'Tag' : 'Tagen'}`;
         } else if (hours > 0) {
           return `vor ${hours} ${hours === 1 ? 'Stunde' : 'Stunden'}`;
         } else if (minutes > 0) {

@@ -1,16 +1,26 @@
 <template>
-  <w-card
-    class="my8 grow"
-    style="height: 11rem; overflow-y: auto; background: white"
+  <w-flex
+    wrap
+    style="width: 35em; margin: 5rem auto"
+    :style="
+      $waveui.breakpoint.sm || $waveui.breakpoint.xs
+        ? 'width: 100%; margin: 5rem auto'
+        : 'width: 35em; margin: 5rem auto'
+    "
   >
     <div
       v-if="subscribers[0]"
       v-for="(subscriber, sIndex) in subscribers"
       :key="sIndex"
+      :style="
+        $waveui.breakpoint.sm || $waveui.breakpoint.xs
+          ? 'min-width: 100%;'
+          : 'min-width: 50%;'
+      "
     >
       <SubscriberRow :subscriber="subscriber" />
     </div>
-  </w-card>
+  </w-flex>
 </template>
 
 <script>
@@ -45,8 +55,8 @@ export default {
     async subscribeSubscribers() {
       const subscribersRef = await this.$fire.firestore
         .collection('subscribers')
-        .orderBy('createdAt', 'desc')
-        .limit(20);
+        .orderBy('createdAt', 'desc');
+      // .limit(20);
       subscribersRef.onSnapshot((querySnapshot) => {
         this.subscribers = querySnapshot.docs.map((doc) => doc.data());
       });

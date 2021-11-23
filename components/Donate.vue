@@ -26,7 +26,7 @@
       <div class="grow">
         <Twingle
           :class="{
-            pa8:
+            ma8:
               !$waveui.breakpoint.xs &&
               !$waveui.breakpoint.sm &&
               !$waveui.breakpoint.md,

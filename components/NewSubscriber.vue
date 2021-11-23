@@ -1,42 +1,68 @@
 <template>
-  <w-card class="my8 grow" style="background: white">
-    <w-form @success="saveNewSubscriber()" v-model="valid">
-      <w-input
-        :validators="[validators.required]"
-        class="mb4"
-        label="Vorname"
-        v-model="newSub.surname"
-      />
-      <w-input
-        :validators="[validators.required]"
-        class="mb4"
-        label="Nachname"
-        v-model="newSub.lastname"
-      />
-      <w-input
-        :validators="[validators.required, validators.validateEmail]"
-        class="mb4"
-        label="E-Mail"
-        v-model="newSub.email"
-      />
-      <w-flex class="basis-zero">
-        <w-button
-          :disabled="!(newSub.surname || newSub.lastname || newSub.email)"
-          bg-color="error"
-          type="reset"
-          class="grow mr3"
-          :ref="'resetSubForm'"
-          >Abbrechen</w-button
-        >
-        <w-button
-          :disabled="!newSub.surname || !newSub.lastname || !newSub.email"
-          type="submit"
-          class="grow ml3"
-          >In die Liste eintragen</w-button
-        >
-      </w-flex>
-    </w-form>
-  </w-card>
+  <w-form
+    @success="saveNewSubscriber()"
+    v-model="valid"
+    :style="
+      $waveui.breakpoint.sm || $waveui.breakpoint.xs
+        ? 'width: 100%; padding: 1rem 2rem 3rem 2rem'
+        : 'width: 25rem; margin: 5rem auto 10rem'
+    "
+  >
+    <w-input
+      :validators="[validators.required]"
+      required
+      class="mb6"
+      color="black"
+      label="Vorname"
+      v-model="newSub.surname"
+    />
+    <w-input
+      :validators="[validators.required]"
+      required
+      class="mb6"
+      color="black"
+      label="Nachname"
+      v-model="newSub.lastname"
+    />
+    <w-input
+      :validators="[validators.required, validators.validateEmail]"
+      class="mb6"
+      color="black"
+      label="E-Mail"
+      v-model="newSub.email"
+    />
+
+    <w-checkbox class="mb6" color="black" v-model="newSub.useNickname"
+      >Ich möchte ein Pseudonym verwenden</w-checkbox
+    >
+    <w-input
+      v-if="newSub.useNickname"
+      :validators="[validators.required]"
+      required
+      class="mb6"
+      color="black"
+      label="Pseudonym"
+      v-model="newSub.nickname"
+    />
+    <w-flex class="basis-zero mt12">
+      <w-button
+        :disabled="!(newSub.surname || newSub.lastname || newSub.email)"
+        xl
+        bg-color="error"
+        type="reset"
+        class="grow mr3 pt6 pb7"
+        :ref="'resetSubForm'"
+        >Abbrechen</w-button
+      >
+      <w-button
+        :disabled="!newSub.surname || !newSub.lastname || !newSub.email"
+        xl
+        type="submit"
+        class="grow ml3 pt6 pb7"
+        >Eintragen</w-button
+      >
+    </w-flex>
+  </w-form>
 </template>
 
 <script>
@@ -75,6 +101,8 @@ export default {
           surname: this.newSub.surname,
           lastname: this.newSub.lastname,
           email: this.newSub.email,
+          useNickname: this.newSub.useNickname,
+          nickname: this.newSub.nickname,
         });
         this.initializeNewSub();
         this.$waveui.notify('Erfolgreich eingetragen!.', 'success', 3000);
@@ -87,4 +115,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.w-input {
+  font-size: 0.95rem;
+}
+</style>
