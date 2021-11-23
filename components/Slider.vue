@@ -70,6 +70,6 @@ export default {
 
 .contentOverlayBackground {
   background: black;
-  opacity: 40%;
+  opacity: 0.4;
 }
 </style>
