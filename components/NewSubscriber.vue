@@ -96,14 +96,17 @@ export default {
     async saveNewSubscriber() {
       const subscribersRef = this.$fire.firestore.collection('subscribers');
       try {
-        await subscribersRef.add({
+        const newSubscriber = {
           createdAt: this.$fireModule.firestore.FieldValue.serverTimestamp(),
           surname: this.newSub.surname,
           lastname: this.newSub.lastname,
           email: this.newSub.email,
-          useNickname: this.newSub.useNickname,
-          nickname: this.newSub.nickname,
-        });
+        };
+        if (this.newSub.useNickname) {
+          newSubscriber.useNickname = this.newSub.useNickname;
+          newSubscriber.nickname = this.newSub.nickname;
+        }
+        await subscribersRef.add(newSubscriber);
         this.initializeNewSub();
         this.$waveui.notify('Erfolgreich eingetragen!.', 'success', 3000);
       } catch (e) {
