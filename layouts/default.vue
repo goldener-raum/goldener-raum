@@ -5,6 +5,7 @@
       <main class="grow">
         <Nuxt />
       </main>
+      <Footer />
     </div>
   </w-app>
 </template>
