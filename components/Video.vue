@@ -2,9 +2,17 @@
   <w-transition-scale-fade>
     <div class="transition-box" v-if="animate" style="animation-duration: 0.5s">
       <div
-        :style="`margin: ${$waveui.breakpoint.width / 500}em ${
-          $waveui.breakpoint.width / 150
-        }em`"
+        :style="
+          $waveui.breakpoint.md ||
+          $waveui.breakpoint.sm ||
+          $waveui.breakpoint.xs
+            ? `margin: ${$waveui.breakpoint.width / 500}em ${
+                $waveui.breakpoint.width / 500
+              }em`
+            : `margin: ${$waveui.breakpoint.width / 500}em ${
+                $waveui.breakpoint.width / 150
+              }em`
+        "
       >
         <div class="placeholderWrapper">
           <div
@@ -18,13 +26,13 @@
             }em`"
           >
             <w-flex column>
-              <h2
+              <h1
                 class="headline mb4 ml4 grow"
-                :style="`font-size: ${$waveui.breakpoint.width / 20}px;`"
+                :style="`font-size: ${$waveui.breakpoint.width / 16}px;`"
               >
                 Betritt den <br />
                 goldenen Raum
-              </h2>
+              </h1>
               <w-icon
                 color="primary"
                 :style="`font-size: ${$waveui.breakpoint.width / 7.5}px;`"

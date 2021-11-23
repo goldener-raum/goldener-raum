@@ -1,9 +1,11 @@
 <template>
   <w-app id="app">
-    <Header id="stickyHeader" />
-    <main class="grow">
-      <Nuxt />
-    </main>
+    <div v-if="isReady">
+      <Header id="stickyHeader" />
+      <main class="grow">
+        <Nuxt />
+      </main>
+    </div>
   </w-app>
 </template>
 
@@ -11,7 +13,16 @@
 import '~/style/global-layout.css';
 import '@mdi/font/css/materialdesignicons.min.css';
 
-export default {};
+export default {
+  mounted() {
+    this.isReady = true;
+  },
+  data() {
+    return {
+      isReady: false,
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -22,5 +33,11 @@ export default {};
   top: 0;
   width: 100%;
   z-index: 20;
+}
+
+@media only screen and (max-width: 600px) {
+  #stickyHeader {
+    height: 2.5rem;
+  }
 }
 </style>

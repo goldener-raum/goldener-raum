@@ -1,5 +1,12 @@
 <template>
-  <div style="margin: 5rem 4rem">
+  <div
+    style="margin-top: 5rem; margin-bottom: 5rem"
+    :class="
+      $waveui.breakpoint.sm || $waveui.breakpoint.xs
+        ? 'sectionMarginMobile'
+        : 'sectionMarginDesktop'
+    "
+  >
     <w-flex
       basis-zero
       :column="
@@ -10,7 +17,7 @@
         <h2 class="headline mt8 mb4 mr8 white" :style="getFontSize">
           Werde Teil des goldenen Raumes.
         </h2>
-        <p class="white py4 mb8 title2 grow">
+        <p class="white py4 mb8 grow">
           Kurzer Erklärtext: Richte hier eine Dauerspende ein und trage dich
           unten ins goldene Buch ein, um deine Unterstützung auch öffentlich zu
           zeigen. Was bedeutet es? Warum 1 Promille?

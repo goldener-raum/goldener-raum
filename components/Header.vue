@@ -1,10 +1,12 @@
 <template>
   <section class="sh1" id="pageHeaderDefault">
-    <w-flex style="padding: 1.1rem">
-      <p class="mx4">Der&nbsp;goldene&nbsp;Raum</p>
+    <w-flex
+      :style="$waveui.breakpoint.xs ? 'padding: 0.5rem;' : 'padding: 0.9rem;'"
+    >
+      <!-- <p class="mx2">Der&nbsp;goldene&nbsp;Raum</p> -->
       <div class="grow" />
-      <p class="mx4">Über&nbsp;uns</p>
-      <p class="mx4">Unterstützen</p>
+      <p class="mx2">Über&nbsp;uns</p>
+      <p class="mx2">Unterstützen</p>
     </w-flex>
   </section>
 </template>
