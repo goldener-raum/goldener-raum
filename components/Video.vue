@@ -36,7 +36,7 @@
           <div
             class="placeholderVideo"
             @mouseleave="showVideo = false"
-            @click="showVideoLock = !showVideoLock"
+            @click="showVideoLock = true"
             v-else
           >
             <w-flex style="height: 100%" justify-center align-center>
@@ -47,14 +47,15 @@
               >
                 mdi mdi-arrow-right-drop-circle-outline
               </w-icon>
-              <w-icon
+              <video
                 v-else
-                color="secondary"
-                :style="`font-size: ${$waveui.breakpoint.width / 7.5}px`"
-                spin
-              >
-                mdi mdi-motion-pause-outline
-              </w-icon>
+                ref="videoRef"
+                src="trailer.mp4"
+                id="video-container"
+                width="100%"
+                autoplay
+                controls
+              />
             </w-flex>
           </div>
         </div>
@@ -85,7 +86,6 @@ export default {
   margin: 2rem 8rem;
 }
 .placeholderWrapper {
-  border: 1px solid gray;
   position: relative;
   padding-bottom: 56.25%;
 }
