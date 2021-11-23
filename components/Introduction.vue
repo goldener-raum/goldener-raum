@@ -1,6 +1,6 @@
 <template>
   <section>
-    <AnotherBlobSection :topAnimated="false">
+    <AnotherBlobSection :topAnimated="false" style="min-height: 50vh">
       <Video />
     </AnotherBlobSection>
     <div class="width: 100%">
