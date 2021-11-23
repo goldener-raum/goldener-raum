@@ -1,6 +1,6 @@
 <template>
-  <w-transition-bounce>
-    <div class="transition-box" v-if="animate">
+  <w-transition-scale-fade>
+    <div class="transition-box" v-if="animate" style="animation-duration: 0.5s">
       <div
         :style="`margin: ${$waveui.breakpoint.width / 500}em ${
           $waveui.breakpoint.width / 150
@@ -60,7 +60,7 @@
         </div>
       </div>
     </div>
-  </w-transition-bounce>
+  </w-transition-scale-fade>
 </template>
 
 <script>

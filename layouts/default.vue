@@ -6,7 +6,13 @@
         <Nuxt />
       </main>
     </section>
-    <w-spinner style="min-heigth: 100vh; margin-top: 25vh" :size="500" v-else />
+    <w-spinner
+      fade
+      color="amber"
+      style="min-heigth: 100vh; margin-top: 25vh"
+      :size="500"
+      v-else
+    />
   </w-app>
 </template>
 
@@ -18,7 +24,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.isReady = true;
-    }, 10);
+    }, 1);
   },
   data() {
     return {
