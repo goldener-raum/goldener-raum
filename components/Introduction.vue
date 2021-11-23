@@ -6,7 +6,7 @@
     <div class="width: 100%">
       <a name="about" class="anchorOffset"></a>
       <div
-        style="margin-top: 10rem; margin-bottom: 5rem"
+        style="margin-top: 7.5rem; margin-bottom: 5rem"
         :class="
           $waveui.breakpoint.sm || $waveui.breakpoint.xs
             ? 'sectionMarginMobile'

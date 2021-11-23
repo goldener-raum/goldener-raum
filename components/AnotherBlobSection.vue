@@ -50,7 +50,7 @@ export default {
     },
     height: {
       type: Number,
-      default: 10,
+      default: 15,
     },
     width: {
       type: Number,
@@ -102,10 +102,10 @@ export default {
 @keyframes morphBottom {
   0%,
   100% {
-    border-radius: 0 0 60% 50%;
+    border-radius: 0 0 60% 100%;
   }
   34% {
-    border-radius: 0 0 70% 70%;
+    border-radius: 0 0 70% 30%;
   }
   67% {
     border-radius: 0 0 60% 60%;
