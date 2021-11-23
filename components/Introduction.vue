@@ -4,7 +4,7 @@
       <Video />
     </AnotherBlobSection>
     <div class="width: 100%">
-      <div style="margin: 10rem 4rem 7.5rem 4rem">
+      <div style="margin: 10rem 4rem 5rem 4rem">
         <h2 class="headline pb8" :style="getFontSize">
           Wir sind die Aktivist*innen des goldenen Raums.
         </h2>
@@ -30,7 +30,11 @@
             </p>
           </div>
           <div
-            v-if="!$waveui.breakpoint.xs && !$waveui.breakpoint.sm"
+            v-if="
+              !$waveui.breakpoint.xs &&
+              !$waveui.breakpoint.sm &&
+              !$waveui.breakpoint.md
+            "
             class="grow"
           />
         </w-flex>

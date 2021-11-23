@@ -1,9 +1,18 @@
 <template>
-  <VueperSlides class="grow">
+  <VueperSlides
+    :slide-ratio="
+      !$waveui.breakpoint.xs && !$waveui.breakpoint.sm ? 1 / 2.2 : 1 / 1
+    "
+    class="grow"
+  >
     <VueperSlide v-for="(slide, i) in slides" :key="i" :image="slide.image">
-      <template #content>
-        <h2 class="text-right mt3 mr6">{{ slide.title }}</h2>
-        <h4 class="text-right mt3 mr6">{{ slide.content }}</h4>
+      <template #content style="position: relative">
+        <div class="contentOverlay contentOverlayBackground" />
+        <div class="contentOverlay">
+          <h2 class="text-center white" :style="getFontSize">
+            {{ slide.title }}
+          </h2>
+        </div>
       </template>
     </VueperSlide>
   </VueperSlides>
@@ -19,24 +28,48 @@ export default {
     return {
       slides: [
         {
-          title: 'Goldener Raum Bild 1',
-          content: 'Beschreibung',
+          title:
+            '"Wir sind X und Y. Aktuell arbeiten wir daran, Z zu erreichen."',
           image: require('@/assets/slider/goldener-raum-01.png'),
         },
         {
-          title: 'Goldener Raum Bild 2',
-          content: 'Beschreibung',
+          title:
+            '"Wir sind X und Y. Aktuell arbeiten wir daran, Z zu erreichen."',
           image: require('@/assets/slider/goldener-raum-02.png'),
         },
         {
-          title: 'Goldener Raum Bild 3',
-          content: 'Beschreibung',
+          title:
+            '"Wir sind X und Y. Aktuell arbeiten wir daran, Z zu erreichen."',
           image: require('@/assets/slider/goldener-raum-03.png'),
         },
       ],
     };
   },
+  computed: {
+    getFontSize() {
+      const calculatedFontSize = this.$waveui.breakpoint.width / 50;
+      const calculatedPadding = this.$waveui.breakpoint.width / 30;
+      if (calculatedFontSize >= 25 && !this.$waveui.breakpoint.xs) {
+        return `font-size: ${calculatedFontSize}px; padding: ${calculatedPadding}px 2rem 0 2rem;`;
+      } else if (!this.$waveui.breakpoint.xs) {
+        return `font-size: 25px; padding: ${calculatedPadding}px 2rem 0 2rem;`;
+      }
+      return `font-size: 18px; padding: ${calculatedPadding}px 2rem 0 2rem;`;
+    },
+  },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.contentOverlay {
+  position: absolute;
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+}
+
+.contentOverlayBackground {
+  background: black;
+  opacity: 40%;
+}
+</style>

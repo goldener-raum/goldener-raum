@@ -5,7 +5,11 @@
         <w-flex basis-zero>
           <div
             class="grow"
-            v-if="!$waveui.breakpoint.xs && !$waveui.breakpoint.sm"
+            v-if="
+              !$waveui.breakpoint.xs &&
+              !$waveui.breakpoint.sm &&
+              !$waveui.breakpoint.md
+            "
           />
           <p class="title2 grow">
             Wir organisieren uns in Gruppen und verfügen über ein gemeinsames
@@ -36,7 +40,11 @@
             </p>
           </div>
           <div
-            v-if="!$waveui.breakpoint.xs && !$waveui.breakpoint.sm"
+            v-if="
+              !$waveui.breakpoint.xs &&
+              !$waveui.breakpoint.sm &&
+              !$waveui.breakpoint.md
+            "
             class="grow"
           />
         </w-flex>
