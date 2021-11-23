@@ -1,9 +1,9 @@
 <template>
-  <div class="wrap" :style="`background: ${background}`">
+  <div :style="`background: ${background}`" class="wrap">
     <div
       v-if="topAnimated"
       class="circleTop"
-      :style="`background: ${background}; width: ${width}vw; height: ${height}vh; top: ${top}vh; left: -50%`"
+      :style="`background: ${background}; width: ${width}vw; height: ${height}vh; top: ${top}vh; left: 0`"
     />
     <div
       class="staticTop"
@@ -16,7 +16,7 @@
     <div
       v-if="bottomAnimated"
       class="circleBottom"
-      :style="`background: ${background}; width: ${width}vw; height: ${height}vh;  bottom: ${bottom}vh; left: -50%`"
+      :style="`background: ${background}; width: ${width}vw; height: ${height}vh;  bottom: ${bottom}vh; left: 0`"
     />
   </div>
 </template>
@@ -31,14 +31,6 @@ export default {
     bottomAnimated: {
       type: Boolean,
       default: true,
-    },
-    left: {
-      type: Number,
-      default: -100,
-    },
-    right: {
-      type: Number,
-      default: -100,
     },
     top: {
       type: Number,
@@ -58,11 +50,11 @@ export default {
     },
     height: {
       type: Number,
-      default: 50,
+      default: 10,
     },
     width: {
       type: Number,
-      default: 200,
+      default: 100,
     },
   },
 };
@@ -73,9 +65,9 @@ export default {
   position: relative;
 }
 .circleTop {
-  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  border-radius: 40% 60% 0 0;
   overflow: hidden;
-  animation: morph 6s linear infinite;
+  animation: morphTop 6s linear infinite;
   z-index: -1;
   position: absolute;
 }
@@ -87,23 +79,36 @@ export default {
 }
 
 .circleBottom {
-  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  border-radius: 0 0 60% 50%;
   overflow: hidden;
-  animation: morph 12s linear infinite;
+  animation: morphBottom 6s linear infinite;
   z-index: -1;
   position: absolute;
 }
 
-@keyframes morph {
+@keyframes morphTop {
   0%,
   100% {
-    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    border-radius: 40% 60% 0 0;
   }
   34% {
-    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    border-radius: 70% 30% 0 0;
   }
   67% {
-    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    border-radius: 100% 60% 0 0;
+  }
+}
+
+@keyframes morphBottom {
+  0%,
+  100% {
+    border-radius: 0 0 60% 50%;
+  }
+  34% {
+    border-radius: 0 0 70% 70%;
+  }
+  67% {
+    border-radius: 0 0 60% 60%;
   }
 }
 </style>

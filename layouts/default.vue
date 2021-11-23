@@ -1,5 +1,5 @@
 <template>
-  <w-app id="app">
+  <w-app>
     <div v-if="isReady">
       <Header id="stickyHeader" />
       <main class="grow">
