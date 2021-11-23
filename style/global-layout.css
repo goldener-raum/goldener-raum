@@ -68,6 +68,26 @@ p {
   }
 }
 
+a {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  a {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+a.anchorOffset {
+  display: block;
+  position: relative;
+  top: -5rem;
+  visibility: hidden;
+}
+
 :root {
   scrollbar-color: #9e9e9e #ececec !important;
 }

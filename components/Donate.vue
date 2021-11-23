@@ -14,6 +14,7 @@
       "
     >
       <div class="grow">
+        <a name="support" class="anchorOffset"></a>
         <h2 class="headline mt8 mb4 mr8 white" :style="getFontSize">
           Werde Teil des goldenen Raumes.
         </h2>

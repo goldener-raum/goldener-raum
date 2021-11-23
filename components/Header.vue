@@ -5,8 +5,8 @@
     >
       <!-- <p class="mx2">Der&nbsp;goldene&nbsp;Raum</p> -->
       <div class="grow" />
-      <p class="mx2">Über&nbsp;uns</p>
-      <p class="mx2">Unterstützen</p>
+      <a class="mx2" href="#about">Über&nbsp;uns</a>
+      <a class="mx2" href="#support">Unterstützen</a>
     </w-flex>
   </section>
 </template>
