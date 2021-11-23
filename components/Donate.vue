@@ -1,20 +1,31 @@
 <template>
   <div style="margin: 5rem 4rem">
-    <w-flex basis-zero>
+    <w-flex
+      basis-zero
+      :column="
+        $waveui.breakpoint.xs || $waveui.breakpoint.sm || $waveui.breakpoint.md
+      "
+    >
       <div class="grow">
         <h2 class="headline mt8 mb4 mr8 white" :style="getFontSize">
           Werde Teil des goldenen Raumes.
         </h2>
-        <p class="white py4 title2 grow">
+        <p class="white py4 mb8 title2 grow">
           Kurzer Erklärtext: Richte hier eine Dauerspende ein und trage dich
           unten ins goldene Buch ein, um deine Unterstützung auch öffentlich zu
           zeigen. Was bedeutet es? Warum 1 Promille?
         </p>
       </div>
-      <div
-        v-if="!$waveui.breakpoint.xs && !$waveui.breakpoint.sm"
-        class="grow"
-      />
+      <div class="grow">
+        <Twingle
+          :class="{
+            pa8:
+              !$waveui.breakpoint.xs &&
+              !$waveui.breakpoint.sm &&
+              !$waveui.breakpoint.md,
+          }"
+        />
+      </div>
     </w-flex>
   </div>
 </template>
