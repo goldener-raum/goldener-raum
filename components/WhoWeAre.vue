@@ -73,10 +73,11 @@
 export default {
   computed: {
     getFontSize() {
-      if (this.$waveui.breakpoint.width / 30 >= 25) {
+      const minimumFontSize = 35;
+      if (this.$waveui.breakpoint.width / 30 >= minimumFontSize) {
         return `font-size: ${this.$waveui.breakpoint.width / 30}px;`;
       }
-      return `font-size: 25px;`;
+      return `font-size: ${minimumFontSize}px;`;
     },
   },
 };
