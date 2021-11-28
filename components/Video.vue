@@ -31,7 +31,7 @@
                 :style="`font-size: ${$waveui.breakpoint.width / 16}px;`"
               >
                 Betritt den <br />
-                goldenen Raum
+                Goldenen Raum
               </h1>
               <w-icon
                 color="primary"
@@ -50,7 +50,7 @@
             <w-flex style="height: 100%" justify-center align-center>
               <w-icon
                 v-if="!showVideoLock"
-                color="secondary"
+                color="primary"
                 :style="`font-size: ${$waveui.breakpoint.width / 7.5}px`"
               >
                 mdi mdi-arrow-right-drop-circle-outline

@@ -45,13 +45,11 @@ export default {
         .get();
       try {
         this.subscribers = subscribersRef.docs.map((doc) => doc.data());
-        this.initializeNewSub();
       } catch (e) {
         alert(e);
         return;
       }
     },
-
     async subscribeSubscribers() {
       const subscribersRef = await this.$fire.firestore
         .collection('subscribers')

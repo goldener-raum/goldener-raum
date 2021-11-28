@@ -26,6 +26,7 @@
       Johannes Ponader (Vorstand)
     </p>
     <br />
+
     <p>
       Spenden:<br />
       Empfängerin: Vertrauensgesellschaft e. V.<br />
@@ -41,6 +42,7 @@
       Registernummer: VR-Nr.: 36462 B
     </p>
     <br />
+
     <p>
       Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br />
       Johannes Ponader<br />

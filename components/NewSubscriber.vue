@@ -46,6 +46,7 @@
     />
     <w-flex class="basis-zero mt12">
       <w-button
+        v-show="false"
         :disabled="!(newSub.surname || newSub.lastname || newSub.email)"
         xl
         bg-color="error"
