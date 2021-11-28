@@ -1,6 +1,65 @@
-/* Outfit-regular */
+/* DMSans-Regular */
 @font-face {
-  font-family: 'Outfit';
+  font-family: 'DMSans-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/DMSans-Regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/DMSans-Regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/DMSans-Regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/DMSans-Regular.woff')
+      format('woff'),
+    /* Modern Browsers */ url('../fonts/DMSans-Regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/DMSans-Regular.svg#Outfit')
+      format('svg'); /* Legacy iOS */
+}
+/* DMSans-Medium */
+@font-face {
+  font-family: 'DMSans-Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/DMSans-Medium.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/DMSans-Medium.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/DMSans-Medium.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/DMSans-Medium.woff')
+      format('woff'),
+    /* Modern Browsers */ url('../fonts/DMSans-Medium.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/DMSans-Medium.svg#Outfit')
+      format('svg'); /* Legacy iOS */
+}
+/* DMSans-Italic */
+@font-face {
+  font-family: 'DMSans-Italic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/DMSans-Italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/DMSans-Italic.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/DMSans-Italic.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/DMSans-Italic.woff')
+      format('woff'),
+    /* Modern Browsers */ url('../fonts/DMSans-Italic.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/DMSans-Italic.svg#Outfit')
+      format('svg'); /* Legacy iOS */
+}
+/* DMSans-Bold */
+@font-face {
+  font-family: 'DMSans-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/DMSans-Bold.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/DMSans-Bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/DMSans-Bold.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/DMSans-Bold.woff') format('woff'),
+    /* Modern Browsers */ url('../fonts/DMSans-Bold.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/DMSans-Bold.svg#Outfit')
+      format('svg'); /* Legacy iOS */
+}
+/* Outfit-Regular */
+@font-face {
+  font-family: 'Outfit-Regular';
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/Outfit-Regular.eot'); /* IE9 Compat Modes */
@@ -13,37 +72,9 @@
     /* Safari, Android, iOS */ url('../fonts/Outfit-Regular.svg#Outfit')
       format('svg'); /* Legacy iOS */
 }
-/* LinBiolinumO-regular */
-@font-face {
-  font-family: 'LinBiolinumO';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/LinBiolinumO.eot'); /* IE9 Compat Modes */
-  src: local(''),
-    url('../fonts/LinBiolinumO.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */ url('../fonts/LinBiolinumO.woff2') format('woff2'),
-    /* Super Modern Browsers */ url('../fonts/LinBiolinumO.woff') format('woff'),
-    /* Modern Browsers */ url('../fonts/LinBiolinumO.ttf') format('truetype'),
-    /* Safari, Android, iOS */ url('../fonts/LinBiolinumO.svg#LinBiolinumO')
-      format('svg'); /* Legacy iOS */
-}
-/* LinBiolinumOB-bold */
-@font-face {
-  font-family: 'LinBiolinumOB';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/LinBiolinumOB.eot'); /* IE9 Compat Modes */
-  src: local(''),
-    url('../fonts/LinBiolinumOB.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */ url('../fonts/LinBiolinumOB.woff2') format('woff2'),
-    /* Super Modern Browsers */ url('../fonts/LinBiolinumOB.woff')
-      format('woff'),
-    /* Modern Browsers */ url('../fonts/LinBiolinumOB.ttf') format('truetype'),
-    /* Safari, Android, iOS */ url('../fonts/LinBiolinumOB.svg#LinBiolinumOB')
-      format('svg'); /* Legacy iOS */
-}
+
 html {
-  font-family: 'Outfit', sans-serif, -apple-system, BlinkMacSystemFont,
+  font-family: 'DMSans-Regular', sans-serif, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 20px;
   word-spacing: 1px;
@@ -116,37 +147,37 @@ a.anchorOffset {
 }
 
 h1 {
-  font-family: 'LinBiolinumO', sans-serif, -apple-system, BlinkMacSystemFont,
+  font-family: 'DMSans-Medium', sans-serif, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h2 {
-  font-family: 'LinBiolinumOB', sans-serif, -apple-system, BlinkMacSystemFont,
+  font-family: 'DMSans-Medium', sans-serif, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h3 {
-  font-family: 'LinBiolinumOB', sans-serif, -apple-system, BlinkMacSystemFont,
+  font-family: 'DMSans-Regular', sans-serif, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
 }
 
 h4 {
-  font-family: 'LinBiolinumOB', sans-serif, -apple-system, BlinkMacSystemFont,
+  font-family: 'DMSans-Regular', sans-serif, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
 }
 
 h5 {
-  font-family: 'LinBiolinumOB', sans-serif, -apple-system, BlinkMacSystemFont,
+  font-family: 'DMSans-Regular', sans-serif, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
 }
 
 h6 {
-  font-family: 'LinBiolinumOB', sans-serif, -apple-system, BlinkMacSystemFont,
+  font-family: 'DMSans-Regular', sans-serif, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
 }
