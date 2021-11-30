@@ -1,12 +1,20 @@
 <template>
   <w-app>
-    <div v-if="isReady">
-      <Header id="stickyHeader" />
-      <main class="grow">
-        <Nuxt />
-      </main>
-      <Footer />
+    <div v-if="!showMaintenance">
+      <div v-if="isReady">
+        <Header id="stickyHeader" />
+        <main class="grow">
+          <Nuxt />
+        </main>
+        <Footer />
+      </div>
     </div>
+    <w-flex justify-center v-else style="background: #f4bd51">
+      <div style="margin-top: 40vh" class="text-center">
+        <h1>Hier entsteht die Website des goldenen Raumes</h1>
+        <h2>Schau gerne bald wieder vorbei!</h2>
+      </div>
+    </w-flex>
   </w-app>
 </template>
 
@@ -17,10 +25,16 @@ import '@mdi/font/css/materialdesignicons.min.css';
 export default {
   mounted() {
     this.isReady = true;
+    if (window) {
+      if (window.location.origin === 'https://www.goldenerraum.de') {
+        this.showMaintenance = true;
+      }
+    }
   },
   data() {
     return {
       isReady: false,
+      showMaintenance: false,
     };
   },
 };
