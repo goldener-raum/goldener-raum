@@ -50,19 +50,21 @@
       v-model="newSub.email"
     />
 
-    <w-flex class="basis-zero mt12">
+    <w-flex class="mt6" justify-space-around>
       <w-button
         v-show="false"
         :disabled="!(newSub.surname || newSub.lastname || newSub.email)"
         xl
         bg-color="error"
         type="reset"
-        class="grow mr3 pt6 pb7"
+        class="pa6 my6"
         :ref="'resetSubForm'"
       >
         Abbrechen
       </w-button>
-      <w-button xl type="submit" class="grow ml3 pt6 pb7">Eintragen</w-button>
+      <w-button xl type="submit" bg-color="secondary" color="white" class="py6">
+        <p class="pl6 pr5">Eintragen</p>
+      </w-button>
     </w-flex>
   </w-form>
 </template>

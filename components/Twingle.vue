@@ -15,7 +15,7 @@
     <script src="https://spenden.twingle.de/embed/generic"></script>
     <!-- twingle -->
     <w-divider class="mx6">ODER</w-divider>
-    <w-flex class="justify-space-around" v-if="!showBankDetails">
+    <w-flex justify-space-around v-if="!showBankDetails">
       <w-button
         @click="showBankDetails = true"
         bg-color="secondary"

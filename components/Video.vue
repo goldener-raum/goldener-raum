@@ -37,7 +37,7 @@
                 class="headline grow"
                 :style="`font-size: ${
                   $waveui.breakpoint.width / 20
-                }px;position: absolute; bottom: 0.5rem`"
+                }px;position: absolute; bottom: 1rem`"
               >
                 Willkommen im
                 <br />
