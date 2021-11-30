@@ -2,22 +2,29 @@
   <section class="sh1" id="pageHeaderDefault">
     <w-flex
       v-if="$nuxt.$route.path === '/'"
-      class="menuLink"
+      class="navBar"
       :style="`${variableMargin} ${variablePadding}`"
     >
-      <!-- <p class="ml8">Der&nbsp;goldene&nbsp;Raum</p> -->
+      <!-- <p :class="`${$waveui.breakpoint.xs ? 'ml4' : 'ml8'}`">Der&nbsp;goldene&nbsp;Raum</p> -->
       <div class="grow" />
-      <a class="ml8" href="#about">Über&nbsp;uns</a>
-      <a class="ml8" href="#support">Unterstützen</a>
+      <a :class="`${$waveui.breakpoint.xs ? 'ml4' : 'ml8'}`" href="/faq">FAQ</a>
+      <a :class="`${$waveui.breakpoint.xs ? 'ml4' : 'ml8'}`" href="#about">
+        Über&nbsp;uns
+      </a>
+      <a :class="`${$waveui.breakpoint.xs ? 'ml4' : 'ml8'}`" href="#support">
+        Unterstützen
+      </a>
     </w-flex>
     <w-flex
       v-else
-      class="menuLink"
+      class="navBar"
       :style="`${variableMargin} ${variablePadding}`"
     >
-      <!-- <p class="ml8">Der&nbsp;goldene&nbsp;Raum</p> -->
+      <!-- <p :class="`${$waveui.breakpoint.xs ? 'ml4' : 'ml8'}`">Der&nbsp;goldene&nbsp;Raum</p> -->
       <div class="grow" />
-      <a class="ml8" href="/">zurück zur Startseite</a>
+      <a :class="`${$waveui.breakpoint.xs ? 'ml4' : 'ml8'}`" href="/">
+        zurück zur Startseite
+      </a>
     </w-flex>
   </section>
 </template>
@@ -47,7 +54,11 @@ export default {
   border-bottom: 1px solid lightgrey;
   padding: 0.5rem;
 }
-.menuLink {
-  font-family: 'DMSans-Medium';
+.navBar {
+  font-family: 'DMSans-Bold';
+}
+a:hover {
+  color: #33408e;
+  text-decoration: underline;
 }
 </style>
