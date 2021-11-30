@@ -62,14 +62,7 @@
       >
         Abbrechen
       </w-button>
-      <w-button
-        :disabled="!newSub.surname || !newSub.lastname || !newSub.email"
-        xl
-        type="submit"
-        class="grow ml3 pt6 pb7"
-      >
-        Eintragen
-      </w-button>
+      <w-button xl type="submit" class="grow ml3 pt6 pb7">Eintragen</w-button>
     </w-flex>
   </w-form>
 </template>
@@ -120,13 +113,13 @@ export default {
         createdAt: this.$fireModule.firestore.FieldValue.serverTimestamp(),
         surname: this.newSub.surname,
         lastname: this.newSub.lastname,
-        email: this.newSub.email,
       };
       if (this.newSub.useNickname) {
         newSubscriber.useNickname = this.newSub.useNickname;
         newSubscriber.nickname = this.newSub.nickname;
       }
       if (this.newSub.newsletterConsent) {
+        newSubscriber.email = this.newSub.email;
         newSubscriber.newsletterConsent = this.newSub.newsletterConsent;
         newSubscriber.timestamp =
           this.$fireModule.firestore.FieldValue.serverTimestamp();

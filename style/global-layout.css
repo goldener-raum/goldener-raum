@@ -147,37 +147,37 @@ a.anchorOffset {
 }
 
 h1 {
-  font-family: 'DMSans-Medium', sans-serif, -apple-system, BlinkMacSystemFont,
+  font-family: 'DMSans-Bold', sans-serif, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 500;
 }
 
 h2 {
-  font-family: 'DMSans-Medium', sans-serif, -apple-system, BlinkMacSystemFont,
+  font-family: 'DMSans-Bold', sans-serif, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 500;
 }
 
 h3 {
-  font-family: 'DMSans-Regular', sans-serif, -apple-system, BlinkMacSystemFont,
+  font-family: 'DMSans-Medium', sans-serif, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
 }
 
 h4 {
-  font-family: 'DMSans-Regular', sans-serif, -apple-system, BlinkMacSystemFont,
+  font-family: 'DMSans-Medium', sans-serif, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
 }
 
 h5 {
-  font-family: 'DMSans-Regular', sans-serif, -apple-system, BlinkMacSystemFont,
+  font-family: 'DMSans-Medium', sans-serif, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
 }
 
 h6 {
-  font-family: 'DMSans-Regular', sans-serif, -apple-system, BlinkMacSystemFont,
+  font-family: 'DMSans-Medium', sans-serif, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
 }

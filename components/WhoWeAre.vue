@@ -18,12 +18,11 @@
             "
           />
           <p class="grow">
-            Wir organisieren uns in Gruppen und verfügen über ein gemeinsames
-            Budget. Es geht um Potenzialentfaltung, um das Erleben von
-            Selbstwirksamkeit und darum, mit Menschen aus anderen Herkünften und
-            sozialen Hintergründen auf Augenhöhe in Verbindung zu kommen. Mit
-            Blick auf die existenziellen Krisen erproben sie Geld als
-            gemeinschaftliches Gestaltungsmittel.
+            Für die Begegnung auf Augenhöhe kreieren wir immer wieder goldene
+            Räume und laden Interessierte dazu ein. Es geht um
+            Potenzialentfaltung, um das Erleben von Selbstwirksamkeit und darum,
+            mit Menschen aus anderen Herkünften und sozialen Hintergründen in
+            Verbindung zu kommen.
           </p>
         </w-flex>
       </div>
@@ -40,16 +39,19 @@
         <w-flex basis-zero>
           <div class="grow">
             <h2 class="headline mt8 mb4 mr8 white" :style="getFontSize">
-              Tritt mit uns in Verbindung.
+              Wir sind der Goldene Raum
             </h2>
             <p class="white py4 grow">
-              Ermöglicht wird dies durch Unterstützer*innen, die mindestens ein
-              Promille ihres Einkommens monatlich einzahlen, genau so wie die
-              Aktivist*innen - ganz auf Augenhöhe. Es gibt Kooperationen mit
-              Karuna Sozialgenossenschaft, Elinor und der GLS Bank. Denn
-              Ökologie und Solidarität gehören zusammen. Werde Teil des
-              Generationsfonds und einer Community die zeigt: Es ist die
-              Diversität, die uns stark macht.
+              Zum Start im Oktober 2021 kamen etwa 40 Menschen zusammen:
+              Aktivist*innen und Unterstützer*innen, manche mit privilegierten
+              Herkünften, anderen haben auch schon mal auf der Straße gelebt.
+              Einige stehen noch vor dem Berufseinstieg, andere gehören älteren
+              Generationen an. 12 Aktivist*innen gaben Einblicke aus ihrer
+              Arbeit, und mit viel Gold wurden gemeinsame Begegnungen
+              zelebriert. Seither trifft sich eine Kerngruppe regelmäßig,
+              tauscht sich über die Aktivitäten und die eigenen Bedarfe aus und
+              bereitet weitere Events vor. Unterstützt wird der goldene Raum
+              auch von der GLS Bank und Organisationen der Aktivist*innen.
             </p>
           </div>
           <div

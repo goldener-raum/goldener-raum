@@ -14,28 +14,22 @@
         "
       >
         <h2 class="headline pb8" :style="getFontSize">
-          Wir sind die Aktivist*innen des goldenen Raums.
+          Das Gold der Selbstwirksamkeit
         </h2>
 
         <w-flex basis-zero>
           <div class="grow">
             <p class="py4 grow">
-              Wir sind (20) junge Menschen, die mit viel kreativer Energie die
-              Welt zu einem schöneren und nachhaltigeren Ort machen.
+              Die Welt zu einem schöneren und nachhaltigeren Ort machen – dafür
+              unterstützen sich Menschen gegenseitig hier im goldenen Raum.
+              Manche sind als Aktivist*innen unterwegs, etwa für
+              Klimagerechtigkeit oder für die Abschaffung der Obdachlosigkeit.
+              Andere begleiten diese Aktivitäten mit ihrem Interesse.
               <br />
-              Den einen ist soziale Gerechtigkeit besonders wichtig, den anderen
-              das Klima. Die einen haben privilegierte Herkünfte, die anderen
-              haben auch schon mal auf der Straße gelebt. Die einen stehen noch
-              vor dem Berufseinstieg, die anderen gehören älteren Generationen
-              an.
-            </p>
-
-            <p class="py4">
-              Mit dem goldenen Raum haben wir einen Generationenfonds kreiert,
-              der es uns erlaubt, Geld als gemeinschaftliches Gestaltungsmittel
-              zu erproben. So wird die Lebensphase vor dem Berufsleben zum
-              "goldenen Raum" für biographische und gesellschaftliche
-              Entwicklungen.
+              Gemeinsam zahlen sie in einen Generationenfonds ein – jede Person
+              mindestens ein Promille ihres Einkommens. Das können mal 30 Cent
+              im Monat sein, oder auch 10 Euro und mehr. Über Auszahlungen für
+              die Aktivitäten wird gemeinschaftlich entschieden.
             </p>
           </div>
           <div

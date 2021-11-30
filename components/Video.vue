@@ -21,25 +21,28 @@
             @mouseover="showVideo = true"
             @mouseleave="showVideo = false"
             @click="showVideo = true"
-            :style="`padding: ${$waveui.breakpoint.width / 400}em ${
-              $waveui.breakpoint.width / 300
-            }em`"
           >
-            <w-flex column>
-              <h1
-                class="headline mb4 ml4 grow"
-                :style="`font-size: ${$waveui.breakpoint.width / 16}px;`"
-              >
-                Betritt den
-                <br />
-                Goldenen Raum
-              </h1>
+            <w-flex
+              style="height: 100%; position: relative"
+              justify-center
+              align-center
+            >
               <w-icon
                 color="primary"
                 :style="`font-size: ${$waveui.breakpoint.width / 7.5}px;`"
               >
                 mdi mdi-arrow-right-drop-circle-outline
               </w-icon>
+              <h1
+                class="headline grow"
+                :style="`font-size: ${
+                  $waveui.breakpoint.width / 20
+                }px;position: absolute; bottom: 0.5rem`"
+              >
+                Willkommen im
+                <br />
+                Goldenen Raum
+              </h1>
             </w-flex>
           </div>
           <div

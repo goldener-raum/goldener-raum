@@ -14,10 +14,8 @@
         <w-flex basis-zero>
           <div class="grow">
             <p class="py4">
-              Wir danken dir von Herzen für deine Unterstützung! Wenn du
-              möchtest, dann trage deinen Namen hier in das goldene Buch ein, um
-              deine Unterstützung öffentlich zu zeigen. (Gerne auch mit einem
-              Pseudonym.)
+              Hier findest du die Namen aller Menschen, die Teil des goldenen
+              Raumes sind.
             </p>
           </div>
           <div
@@ -51,10 +49,6 @@
         <h2 class="headline pt12 pb4" :style="getFontSize">
           Die Menschen im Raum
         </h2>
-        <p class="py4 grow">
-          Hier findest du die Namen aller Menschen, die Teil des goldenen Raumes
-          sind.
-        </p>
       </div>
     </BlobSection>
     <ListSubscribers />
@@ -63,6 +57,9 @@
       :src="`${$config.baseUrl}/landingpage/goldener-raum-05.png`"
       :ratio="400 / 1000"
     />
+    <p class="text-center" style="margin: 5rem 0 1rem">
+      Gemeinschaftlich für den Planeten und für mehr Gerechtigkeit.
+    </p>
     <h2
       class="headline text-center"
       :class="
@@ -70,9 +67,9 @@
           ? 'sectionMarginMobile'
           : 'sectionMarginDesktop'
       "
-      :style="getFontSize + 'margin: 5rem 0;'"
+      :style="getFontSize + 'margin: 1rem 0 5rem;'"
     >
-      Vielen Dank!
+      Herzlichen Dank!
     </h2>
   </section>
 </template>
