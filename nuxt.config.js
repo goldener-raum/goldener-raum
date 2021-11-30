@@ -34,7 +34,7 @@ export default {
       {
         colors: {
           primary: '#565656',
-          secondary: '#0bd491',
+          secondary: '#33408e',
           success: '#0bd491',
           info: '#00B0E0',
           error: '#D4320B',
