@@ -32,9 +32,9 @@
       v-model="newSub.email"
     />
 
-    <w-checkbox class="mb6" color="black" v-model="newSub.useNickname"
-      >Ich möchte ein Pseudonym verwenden</w-checkbox
-    >
+    <w-checkbox class="mb6" color="black" v-model="newSub.useNickname">
+      Ich möchte ein Pseudonym verwenden
+    </w-checkbox>
     <w-input
       v-if="newSub.useNickname"
       :validators="[validators.required]"
@@ -53,15 +53,17 @@
         type="reset"
         class="grow mr3 pt6 pb7"
         :ref="'resetSubForm'"
-        >Abbrechen</w-button
       >
+        Abbrechen
+      </w-button>
       <w-button
         :disabled="!newSub.surname || !newSub.lastname || !newSub.email"
         xl
         type="submit"
         class="grow ml3 pt6 pb7"
-        >Eintragen</w-button
       >
+        Eintragen
+      </w-button>
     </w-flex>
   </w-form>
 </template>

@@ -21,7 +21,8 @@
           <div class="grow">
             <p class="py4 grow">
               Wir sind (20) junge Menschen, die mit viel kreativer Energie die
-              Welt zu einem schöneren und nachhaltigeren Ort machen.<br />
+              Welt zu einem schöneren und nachhaltigeren Ort machen.
+              <br />
               Den einen ist soziale Gerechtigkeit besonders wichtig, den anderen
               das Klima. Die einen haben privilegierte Herkünfte, die anderen
               haben auch schon mal auf der Straße gelebt. Die einen stehen noch

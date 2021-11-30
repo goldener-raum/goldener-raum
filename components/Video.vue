@@ -30,7 +30,8 @@
                 class="headline mb4 ml4 grow"
                 :style="`font-size: ${$waveui.breakpoint.width / 16}px;`"
               >
-                Betritt den <br />
+                Betritt den
+                <br />
                 Goldenen Raum
               </h1>
               <w-icon

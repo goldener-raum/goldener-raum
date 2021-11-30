@@ -11,7 +11,7 @@
         position: relative;
         z-index: 2;
       "
-    ></iframe>
+    />
     <script src="https://spenden.twingle.de/embed/generic"></script>
     <!-- twingle -->
   </div>
