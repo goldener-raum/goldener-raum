@@ -28,7 +28,7 @@
         </w-flex>
       </div>
     </div>
-    <AnotherBlobSection :background="'#33408e'">
+    <BlobSection :background="'#33408e'">
       <div
         style="margin-bottom: 5rem"
         :class="
@@ -65,7 +65,7 @@
 
       <Slider />
       <Donate />
-    </AnotherBlobSection>
+    </BlobSection>
   </section>
 </template>
 

@@ -31,7 +31,7 @@
         </w-flex>
       </div>
     </div>
-    <AnotherBlobSection style="margin-bottom: 10rem">
+    <BlobSection style="margin-bottom: 10rem">
       <div class="grow">
         <NewSubscriber />
 
@@ -56,7 +56,7 @@
           sind.
         </p>
       </div>
-    </AnotherBlobSection>
+    </BlobSection>
     <ListSubscribers />
     <w-image
       :transition="'slide-fade-up'"

@@ -1,8 +1,8 @@
 <template>
   <section>
-    <AnotherBlobSection :topAnimated="false">
+    <BlobSection :topAnimated="false">
       <Video />
-    </AnotherBlobSection>
+    </BlobSection>
     <div class="width: 100%">
       <a name="about" class="anchorOffset"></a>
       <div
