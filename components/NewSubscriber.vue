@@ -24,13 +24,6 @@
       label="Nachname"
       v-model="newSub.lastname"
     />
-    <w-input
-      :validators="[validators.required, validators.validateEmail]"
-      class="mb6"
-      color="black"
-      label="E-Mail"
-      v-model="newSub.email"
-    />
 
     <w-checkbox class="mb6" color="black" v-model="newSub.useNickname">
       Ich möchte ein Pseudonym verwenden
@@ -44,6 +37,19 @@
       label="Pseudonym"
       v-model="newSub.nickname"
     />
+
+    <w-checkbox class="mb6" color="black" v-model="newSub.newsletterConsent">
+      Gerne möchte ich weitere Infos erhalten
+    </w-checkbox>
+    <w-input
+      v-if="newSub.newsletterConsent"
+      :validators="[validators.required, validators.validateEmail]"
+      class="mb6"
+      color="black"
+      label="E-Mail"
+      v-model="newSub.email"
+    />
+
     <w-flex class="basis-zero mt12">
       <w-button
         v-show="false"
@@ -99,23 +105,33 @@ export default {
     async saveNewSubscriber() {
       const subscribersRef = this.$fire.firestore.collection('subscribers');
       try {
-        const newSubscriber = {
-          createdAt: this.$fireModule.firestore.FieldValue.serverTimestamp(),
-          surname: this.newSub.surname,
-          lastname: this.newSub.lastname,
-          email: this.newSub.email,
-        };
-        if (this.newSub.useNickname) {
-          newSubscriber.useNickname = this.newSub.useNickname;
-          newSubscriber.nickname = this.newSub.nickname;
-        }
-        await subscribersRef.add(newSubscriber);
+        await subscribersRef.add(this.newSubscriber);
         this.initializeNewSub();
         this.$waveui.notify('Erfolgreich eingetragen!.', 'success', 3000);
       } catch (e) {
         this.$waveui.notify('Fehler beim eintragen:' + e, 'error', 3000);
         return;
       }
+    },
+  },
+  computed: {
+    newSubscriber() {
+      const newSubscriber = {
+        createdAt: this.$fireModule.firestore.FieldValue.serverTimestamp(),
+        surname: this.newSub.surname,
+        lastname: this.newSub.lastname,
+        email: this.newSub.email,
+      };
+      if (this.newSub.useNickname) {
+        newSubscriber.useNickname = this.newSub.useNickname;
+        newSubscriber.nickname = this.newSub.nickname;
+      }
+      if (this.newSub.newsletterConsent) {
+        newSubscriber.newsletterConsent = this.newSub.newsletterConsent;
+        newSubscriber.timestamp =
+          this.$fireModule.firestore.FieldValue.serverTimestamp();
+      }
+      return newSubscriber;
     },
   },
 };
