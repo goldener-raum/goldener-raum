@@ -14,61 +14,57 @@
               }em`
         "
       >
-        <div class="placeholderWrapper">
-          <div
-            class="placeholderVideo"
-            v-if="!showVideo && !showVideoLock"
-            @mouseover="showVideo = true"
-            @mouseleave="showVideo = false"
-            @click="showVideo = true"
+        <div
+          style="cursor: pointer"
+          class="placeholderWrapper"
+          @click="showVideo = true"
+          v-if="!showVideo"
+        >
+          <div class="overlay"></div>
+          <w-image
+            style="position: absolute"
+            :ratio="1080 / 1920"
+            :src="`/video/video-placeholder.png`"
+          ></w-image>
+          <w-flex
+            style="
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              top: 0;
+              z-index: 10;
+            "
+            justify-center
+            align-center
           >
-            <w-flex
-              style="height: 100%; position: relative"
-              justify-center
-              align-center
+            <w-icon
+              color="white"
+              :style="`font-size: ${$waveui.breakpoint.width / 7.5}px;`"
             >
-              <w-icon
-                color="primary"
-                :style="`font-size: ${$waveui.breakpoint.width / 7.5}px;`"
-              >
-                mdi mdi-arrow-right-drop-circle-outline
-              </w-icon>
-              <h1
-                class="headline grow"
-                :style="`font-size: ${
-                  $waveui.breakpoint.width / 20
-                }px;position: absolute; bottom: 1rem`"
-              >
-                Willkommen im
-                <br />
-                Goldenen Raum
-              </h1>
-            </w-flex>
-          </div>
-          <div
-            class="placeholderVideo"
-            @mouseleave="showVideo = false"
-            @click="showVideoLock = true"
-            v-else
-          >
-            <w-flex style="height: 100%" justify-center align-center>
-              <w-icon
-                v-if="!showVideoLock"
-                color="primary"
-                :style="`font-size: ${$waveui.breakpoint.width / 7.5}px`"
-              >
-                mdi mdi-arrow-right-drop-circle-outline
-              </w-icon>
-              <video
-                v-else
-                ref="videoRef"
-                src="trailer.mp4"
-                id="video-container"
-                width="100%"
-                autoplay
-                controls
-              />
-            </w-flex>
+              mdi mdi-arrow-right-drop-circle-outline
+            </w-icon>
+            <h1
+              class="headline grow white"
+              :style="`font-size: ${
+                $waveui.breakpoint.width / 20
+              }px;position: absolute; bottom: 1rem`"
+            >
+              Willkommen im
+              <br />
+              Goldenen Raum
+            </h1>
+          </w-flex>
+        </div>
+        <div class="placeholderWrapper" v-else>
+          <div class="placeholderVideo">
+            <video
+              ref="videoRef"
+              src="video/trailer.mp4"
+              id="video-container"
+              width="100%"
+              autoplay
+              controls
+            />
           </div>
         </div>
       </div>
@@ -86,7 +82,6 @@ export default {
   data() {
     return {
       showVideo: false,
-      showVideoLock: false,
       animate: false,
     };
   },
@@ -107,7 +102,14 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: white;
-  cursor: pointer;
+}
+.overlay {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.5;
 }
 </style>
