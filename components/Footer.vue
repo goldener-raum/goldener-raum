@@ -15,10 +15,10 @@
         Mit freundlicher Unterstützung:
       </p>
       <w-flex justify-start>
-        <div style="width: 45%; max-width: 20rem">
+        <div style="width: 45%; max-width: 15rem">
           <w-image :ratio="163 / 500" :src="`/logos/gls-logo.png`" />
         </div>
-        <div style="width: 45%; max-width: 20rem">
+        <div style="width: 45%; max-width: 15rem">
           <w-image :ratio="163 / 500" :src="`/logos/xbge-logo.png`" />
         </div>
       </w-flex>
