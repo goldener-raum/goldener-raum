@@ -1,7 +1,7 @@
 <template>
-  <div class="mb3">
+  <div :class="`${$waveui.breakpoint.xs ? 'mb1' : 'mb3'}`">
     <p class="caption disableSelect">{{ label }}:</p>
-    <p>
+    <p :style="`${$waveui.breakpoint.xs && 'font-size: 0.9rem'}`">
       {{ content }}
     </p>
   </div>

@@ -27,14 +27,13 @@
       </w-button>
     </w-flex>
     <div class="pa8" v-else>
-      <h2 class="mb6">Bankverbindung für deine Unterstützung:</h2>
+      <h2 class="mb6" :style="`${$waveui.breakpoint.xs && 'font-size: 1rem'}`">
+        Bankverbindung für deine Unterstützung:
+      </h2>
       <LabeledText :label="'Zahlungsempfänger'" :content="'Goldener Raum'" />
       <LabeledText :label="'IBAN'" :content="'DE48 4306 0967 7918 8877 00'" />
       <LabeledText :label="'BIC'" :content="'GENODEM1GLS'" />
-      <LabeledText
-        :label="'Verwendungszweck'"
-        :content="'Goldener Raum (2183SN8)'"
-      />
+      <LabeledText :label="'Verwendungszweck'" :content="'Goldener Raum'" />
     </div>
   </div>
 </template>
