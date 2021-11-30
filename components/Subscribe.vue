@@ -57,7 +57,7 @@
       :src="`${$config.baseUrl}/landingpage/goldener-raum-07.png`"
       :ratio="400 / 1000"
     />
-    <p class="text-center" style="margin: 5rem 0 1rem">
+    <p class="text-center" style="margin: 5rem 1rem 1rem 1rem">
       Gemeinschaftlich für den Planeten und für mehr Gerechtigkeit.
     </p>
     <h2
@@ -67,7 +67,7 @@
           ? 'sectionMarginMobile'
           : 'sectionMarginDesktop'
       "
-      :style="getFontSize + 'margin: 1rem 0 5rem;'"
+      :style="getFontSize + 'margin: 1rem 1rem 5rem 1rem;'"
     >
       Herzlichen Dank!
     </h2>

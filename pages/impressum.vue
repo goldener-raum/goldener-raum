@@ -63,6 +63,13 @@
       <br />
       12053 Berlin
     </p>
+    <br />
+
+    <p>
+      Einzahlungen für den goldenen Raum erfolgen auf ein Konto des Elinor
+      Treuhand e.V. und werden selbstorganisiert von den Mitgliedern des
+      goldenen Raumes verwaltet.
+    </p>
   </div>
 </template>
 

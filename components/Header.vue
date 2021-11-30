@@ -1,10 +1,6 @@
 <template>
   <section class="sh1" id="pageHeaderDefault">
-    <w-flex
-      v-if="$nuxt.$route.path === '/'"
-      :style="`${variableMargin} ${variablePadding}`"
-      class="navBar"
-    >
+    <w-flex :style="`${variableMargin} ${variablePadding}`" class="navBar">
       <Logo />
       <div class="grow" />
 
