@@ -35,7 +35,7 @@
 
         <w-image
           :transition="'slide-fade-up'"
-          :src="`${$config.baseUrl}/landingpage/goldener-raum-04.png`"
+          :src="`${$config.baseUrl}/landingpage/goldener-raum-06.png`"
           :ratio="400 / 1000"
         />
       </div>
@@ -54,7 +54,7 @@
     <ListSubscribers />
     <w-image
       :transition="'slide-fade-up'"
-      :src="`${$config.baseUrl}/landingpage/goldener-raum-05.png`"
+      :src="`${$config.baseUrl}/landingpage/goldener-raum-07.png`"
       :ratio="400 / 1000"
     />
     <p class="text-center" style="margin: 5rem 0 1rem">

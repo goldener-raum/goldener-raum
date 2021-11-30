@@ -4,6 +4,7 @@
       !$waveui.breakpoint.xs && !$waveui.breakpoint.sm ? 1 / 2.2 : 1 / 1
     "
     :arrows="false"
+    :bullets="false"
     ref="vueSlider"
     class="grow"
   >
@@ -38,6 +39,11 @@ export default {
       slides: [
         {
           title:
+            'Jan, Extinction Rebellion / Entfaltungsnetz: „Für gesellschaftlichen Wandel brauchen wir individuelle Transformation - gemeinschaftlich!“',
+          image: require('@/assets/slider/goldener-raum-04.png'),
+        },
+        {
+          title:
             '"Wir sind X und Y. Aktuell arbeiten wir daran, Z zu erreichen."',
           image: require('@/assets/slider/goldener-raum-01.png'),
         },
@@ -59,13 +65,13 @@ export default {
       const minFontSize = 25;
       const calculatedFontSize = this.$waveui.breakpoint.width / 50;
       const calculatedFontSizeSM = this.$waveui.breakpoint.width / 30;
-      const calculatedPadding = this.$waveui.breakpoint.width / 30;
+      const calculatedPadding = this.$waveui.breakpoint.width / 70;
       if (calculatedFontSize >= minFontSize && !this.$waveui.breakpoint.xs) {
-        return `font-size: ${calculatedFontSize}px; padding: ${calculatedPadding}px 3rem 0 3rem;`;
+        return `font-size: ${calculatedFontSize}px; padding: ${calculatedPadding}px 4rem 0 4rem;`;
       } else if (!this.$waveui.breakpoint.xs) {
-        return `font-size: ${minFontSize}px; padding: ${calculatedPadding}px 3rem 0 3rem;`;
+        return `font-size: ${minFontSize}px; padding: ${calculatedPadding}px 4rem 0 4rem;`;
       }
-      return `font-size: ${calculatedFontSizeSM}px; padding: ${calculatedPadding}px 3rem 0 3rem;`;
+      return `font-size: ${calculatedFontSizeSM}px; padding: ${calculatedPadding}px 4rem 0 4rem;`;
     },
     getArrowSize() {
       const minFontSize = 60;
