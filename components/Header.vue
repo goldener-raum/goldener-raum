@@ -2,34 +2,40 @@
   <section class="sh1" id="pageHeaderDefault">
     <w-flex
       v-if="$nuxt.$route.path === '/'"
-      class="navBar"
       :style="`${variableMargin} ${variablePadding}`"
-    >
-      <!-- <p :class="`${$waveui.breakpoint.xs ? 'ml4' : 'ml8'}`">Der&nbsp;goldene&nbsp;Raum</p> -->
-      <div class="grow" />
-      <a :class="`${$waveui.breakpoint.xs ? 'ml4' : 'ml8'}`" href="/faq">FAQ</a>
-      <a :class="`${$waveui.breakpoint.xs ? 'ml4' : 'ml8'}`" href="#about">
-        Über&nbsp;uns
-      </a>
-      <a :class="`${$waveui.breakpoint.xs ? 'ml4' : 'ml8'}`" href="#support">
-        Unterstützen
-      </a>
-    </w-flex>
-    <w-flex
-      v-else
       class="navBar"
-      :style="`${variableMargin} ${variablePadding}`"
     >
-      <!-- <p :class="`${$waveui.breakpoint.xs ? 'ml4' : 'ml8'}`">Der&nbsp;goldene&nbsp;Raum</p> -->
+      <Logo />
       <div class="grow" />
-      <a :class="`${$waveui.breakpoint.xs ? 'ml4' : 'ml8'}`" href="/">
-        zurück zur Startseite
-      </a>
+
+      <Navbar v-if="!$waveui.breakpoint.xs" />
+      <button
+        class="invisibleButton"
+        v-else
+        @click="openMobileMenu = !openMobileMenu"
+      >
+        <w-icon xl color="primary">mdi mdi-menu</w-icon>
+      </button>
+
+      <w-drawer v-model="openMobileMenu" top absolute>
+        <w-flex :style="`${variableMargin} ${variablePadding}`">
+          <Navbar />
+          <div class="grow" />
+          <button class="invisibleButton" @click="openMobileMenu = false">
+            <w-icon xl color="primary">mdi mdi-close</w-icon>
+          </button>
+        </w-flex>
+      </w-drawer>
     </w-flex>
   </section>
 </template>
 <script>
 export default {
+  data() {
+    return {
+      openMobileMenu: false,
+    };
+  },
   computed: {
     variableMargin() {
       const margin =
@@ -54,11 +60,30 @@ export default {
   border-bottom: 1px solid lightgrey;
   padding: 0.5rem;
 }
-.navBar {
-  font-family: 'DMSans-Bold';
-}
+
 a:hover {
   color: #33408e;
   text-decoration: underline;
+}
+a {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: black;
+}
+.invisibleButton {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.navBar {
+  font-family: 'DMSans-Bold';
+}
+
+@media only screen and (max-width: 600px) {
+  a {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
 }
 </style>

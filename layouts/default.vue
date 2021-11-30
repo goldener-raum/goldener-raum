@@ -29,7 +29,7 @@ export default {
 <style scoped>
 #stickyHeader {
   background: white;
-  height: 3.5rem;
+  height: 3.25rem;
   position: sticky;
   top: 0;
   width: 100%;
