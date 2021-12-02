@@ -30,7 +30,10 @@
       <h2 class="mb6" :style="`${$waveui.breakpoint.xs && 'font-size: 1rem'}`">
         Bankverbindung für deine Unterstützung:
       </h2>
-      <LabeledText :label="'Zahlungsempfänger'" :content="'Goldener Raum'" />
+      <LabeledText
+        :label="'Zahlungsempfänger'"
+        :content="'elinor Treuhand e.V.'"
+      />
       <LabeledText :label="'IBAN'" :content="'DE48 4306 0967 7918 8877 00'" />
       <LabeledText :label="'BIC'" :content="'GENODEM1GLS'" />
       <LabeledText :label="'Verwendungszweck'" :content="'Goldener Raum'" />
