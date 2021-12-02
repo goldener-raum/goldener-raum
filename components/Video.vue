@@ -1,7 +1,19 @@
 <template>
   <w-transition-scale-fade>
     <div class="transition-box" v-if="animate" style="animation-duration: 0.5s">
-      <div>
+      <div
+        :style="
+          $waveui.breakpoint.md ||
+          $waveui.breakpoint.sm ||
+          $waveui.breakpoint.xs
+            ? `margin: ${$waveui.breakpoint.width / 500}em ${
+                $waveui.breakpoint.width / 500
+              }em`
+            : `margin: ${$waveui.breakpoint.width / 500}em ${
+                $waveui.breakpoint.width / 150
+              }em`
+        "
+      >
         <div
           style="cursor: pointer"
           class="placeholderWrapper"
@@ -35,7 +47,7 @@
               class="headline grow white"
               :style="`font-size: ${
                 $waveui.breakpoint.width / 20
-              }px;position: absolute; bottom: 18%; line-height: 1.1`"
+              }px;position: absolute; bottom: 10%; line-height: 1.1`"
             >
               Willkommen im
               <br />
