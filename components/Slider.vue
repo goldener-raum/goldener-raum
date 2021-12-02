@@ -67,7 +67,7 @@ export default {
       const calculatedFontSizeSM = this.$waveui.breakpoint.width / 30;
       const calculatedPadding = this.$waveui.breakpoint.width / 70;
       if (calculatedFontSize >= minFontSize && !this.$waveui.breakpoint.xs) {
-        return `font-size: ${calculatedFontSize}px; padding: ${calculatedPadding}px 4rem 0 4rem;`;
+        return `font-size: ${calculatedFontSize}px; padding: ${calculatedPadding}px 8rem 0 8rem;`;
       } else if (!this.$waveui.breakpoint.xs) {
         return `font-size: ${minFontSize}px; padding: ${calculatedPadding}px 4rem 0 4rem;`;
       }
