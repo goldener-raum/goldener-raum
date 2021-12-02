@@ -1,19 +1,7 @@
 <template>
   <w-transition-scale-fade>
     <div class="transition-box" v-if="animate" style="animation-duration: 0.5s">
-      <div
-        :style="
-          $waveui.breakpoint.md ||
-          $waveui.breakpoint.sm ||
-          $waveui.breakpoint.xs
-            ? `margin: ${$waveui.breakpoint.width / 500}em ${
-                $waveui.breakpoint.width / 500
-              }em`
-            : `margin: ${$waveui.breakpoint.width / 500}em ${
-                $waveui.breakpoint.width / 150
-              }em`
-        "
-      >
+      <div>
         <div
           style="cursor: pointer"
           class="placeholderWrapper"
@@ -39,15 +27,15 @@
           >
             <w-icon
               color="white"
-              :style="`font-size: ${$waveui.breakpoint.width / 7.5}px;`"
+              :style="`font-size: ${$waveui.breakpoint.width / 8.5}px;`"
             >
-              mdi mdi-arrow-right-drop-circle-outline
+              mdi mdi-play
             </w-icon>
             <h1
               class="headline grow white"
               :style="`font-size: ${
                 $waveui.breakpoint.width / 20
-              }px;position: absolute; bottom: 1rem`"
+              }px;position: absolute; bottom: 18%; line-height: 1.1`"
             >
               Willkommen im
               <br />
