@@ -39,23 +39,18 @@ export default {
       slides: [
         {
           title:
-            'Jan, Extinction Rebellion / Entfaltungsnetz: „Für gesellschaftlichen Wandel brauchen wir individuelle Transformation - gemeinschaftlich!“',
-          image: require('@/assets/slider/goldener-raum-04.png'),
+            'Trace Abenaa, Demokratische Stimme der Jugend: "Ich gestalte Freiräume, in denen junge Menschen ihre Schöpfer*innenkraft entdecken können."',
+          image: require('@/assets/slider/goldener-raum-tracy.png'),
         },
         {
           title:
-            '"Wir sind X und Y. Aktuell arbeiten wir daran, Z zu erreichen."',
-          image: require('@/assets/slider/goldener-raum-01.png'),
+            'Jan, Extinction Rebellion / Entfaltungsnetz: "Für gesellschaftlichen Wandel brauchen wir individuelle Transformation - gemeinschaftlich!"',
+          image: require('@/assets/slider/goldener-raum-jan.png'),
         },
         {
           title:
-            '"Wir sind X und Y. Aktuell arbeiten wir daran, Z zu erreichen."',
-          image: require('@/assets/slider/goldener-raum-02.png'),
-        },
-        {
-          title:
-            '"Wir sind X und Y. Aktuell arbeiten wir daran, Z zu erreichen."',
-          image: require('@/assets/slider/goldener-raum-03.png'),
+            'Kiara und Leo, Haus am Wald: "Wir schaffen einen Ort für Alleinerziehende und Familien in Gemeinschaft."',
+          image: require('@/assets/slider/goldener-raum-kiara-leo.png'),
         },
       ],
     };
