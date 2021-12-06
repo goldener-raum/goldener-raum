@@ -9,11 +9,11 @@
             : 'sectionMarginDesktop'
         "
       >
-        <h2 class="headline pb8" :style="getFontSize">Das goldene Buch</h2>
+        <h2 class="headline pb4" :style="getFontSize">Das goldene Buch</h2>
 
         <w-flex basis-zero>
           <div class="grow">
-            <p class="py4">
+            <p class="py2">
               Hier eintragen und Teil des goldenen Raumes werden.
             </p>
           </div>
