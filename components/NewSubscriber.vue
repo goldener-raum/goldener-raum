@@ -37,11 +37,11 @@
     />
 
     <w-checkbox class="mb6" color="black" v-model="newSub.useNickname">
-      Ich möchte ein Pseudonym verwenden
+      Meinen Namen nicht öffentlich anzeigen
     </w-checkbox>
 
     <w-checkbox class="mb6" color="black" v-model="newSub.newsletterConsent">
-      Gerne möchte ich weitere Infos erhalten
+      Gerne möchte ich weitere Infos erhalten *
     </w-checkbox>
     <w-input
       v-if="newSub.newsletterConsent"
@@ -52,13 +52,15 @@
       v-model="newSub.email"
     />
 
-    <p>
-      <a class="body text-center" href="/datenschutz">
-        Hinweise zum Datenschutz
+    <p class="body lh1 mt4">
+      * Ich bin damit einverstanden, dass die Vertrauensgesellschaft e.V. mich
+      mit Neuigkeiten per E-Mail kontaktiert.
+      <a class="body text-center lh1" href="/datenschutz">
+        Hinweise zum Datenschutz findeen Sie hier!
       </a>
     </p>
 
-    <w-flex class="mt6" justify-space-around>
+    <w-flex class="mt8" justify-space-around>
       <w-button
         v-show="false"
         xl
