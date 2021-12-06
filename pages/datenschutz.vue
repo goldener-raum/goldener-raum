@@ -3,12 +3,12 @@
     <h1>Datenschutzerklärung</h1>
 
     <p>
-      Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz
-      hat einen besonders hohen Stellenwert für die Geschäftsleitung der
+      Wir freuen uns sehr über Ihr Interesse an Projekt. Datenschutz hat einen
+      besonders hohen Stellenwert für die Geschäftsleitung der
       Vertrauensgesellschaft e.V.. Eine Nutzung der Internetseiten der
       Vertrauensgesellschaft e.V. ist grundsätzlich ohne jede Angabe
       personenbezogener Daten möglich. Sofern eine betroffene Person besondere
-      Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen
+      Services unseres Projektes über unsere Internetseite in Anspruch nehmen
       möchte, könnte jedoch eine Verarbeitung personenbezogener Daten
       erforderlich werden. Ist die Verarbeitung personenbezogener Daten
       erforderlich und besteht für eine solche Verarbeitung keine gesetzliche
@@ -22,7 +22,7 @@
       erfolgt stets im Einklang mit der Datenschutz-Grundverordnung und in
       Übereinstimmung mit den für die Vertrauensgesellschaft e.V. geltenden
       landesspezifischen Datenschutzbestimmungen. Mittels dieser
-      Datenschutzerklärung möchte unser Unternehmen die Öffentlichkeit über Art,
+      Datenschutzerklärung möchte unser Projekt die Öffentlichkeit über Art,
       Umfang und Zweck der von uns erhobenen, genutzten und verarbeiteten
       personenbezogenen Daten informieren. Ferner werden betroffene Personen
       mittels dieser Datenschutzerklärung über die ihnen zustehenden Rechte
@@ -232,7 +232,7 @@
       Strafverfolgung notwendigen Informationen bereitzustellen. Diese anonym
       erhobenen Daten und Informationen werden durch die Vertrauensgesellschaft
       e.V. daher einerseits statistisch und ferner mit dem Ziel ausgewertet, den
-      Datenschutz und die Datensicherheit in unserem Unternehmen zu erhöhen, um
+      Datenschutz und die Datensicherheit in unserem Projekt zu erhöhen, um
       letztlich ein optimales Schutzniveau für die von uns verarbeiteten
       personenbezogenen Daten sicherzustellen. Die anonymen Daten der
       Server-Logfiles werden getrennt von allen durch eine betroffene Person
@@ -242,7 +242,7 @@
     <h2>4. Abonnement unseres Newsletters</h2>
     <p>
       Auf der Internetseite der Vertrauensgesellschaft e.V. wird den Benutzern
-      die Möglichkeit eingeräumt, den Newsletter unseres Unternehmens zu
+      die Möglichkeit eingeräumt, den Newsletter unseres Projektes zu
       abonnieren. Welche personenbezogenen Daten bei der Bestellung des
       Newsletters an den für die Verarbeitung Verantwortlichen übermittelt
       werden, ergibt sich aus der hierzu verwendeten Eingabemaske.
@@ -251,9 +251,9 @@
     <p>
       Die Vertrauensgesellschaft e.V. informiert ihre Kunden und
       Geschäftspartner in regelmäßigen Abständen im Wege eines Newsletters über
-      Angebote des Unternehmens. Der Newsletter unseres Unternehmens kann von
-      der betroffenen Person grundsätzlich nur dann empfangen werden, wenn (1)
-      die betroffene Person über eine gültige E-Mail-Adresse verfügt und (2) die
+      Angebote des Projektes. Der Newsletter unseres Projektes kann von der
+      betroffenen Person grundsätzlich nur dann empfangen werden, wenn (1) die
+      betroffene Person über eine gültige E-Mail-Adresse verfügt und (2) die
       betroffene Person sich für den Newsletterversand registriert. An die von
       einer betroffenen Person erstmalig für den Newsletterversand eingetragene
       E-Mail-Adresse wird aus rechtlichen Gründen eine Bestätigungsmail im
@@ -325,17 +325,17 @@
     <p>
       Die Internetseite der Vertrauensgesellschaft e.V. enthält aufgrund von
       gesetzlichen Vorschriften Angaben, die eine schnelle elektronische
-      Kontaktaufnahme zu unserem Unternehmen sowie eine unmittelbare
-      Kommunikation mit uns ermöglichen, was ebenfalls eine allgemeine Adresse
-      der sogenannten elektronischen Post (E-Mail-Adresse) umfasst. Sofern eine
-      betroffene Person per E-Mail oder über ein Kontaktformular den Kontakt mit
-      dem für die Verarbeitung Verantwortlichen aufnimmt, werden die von der
-      betroffenen Person übermittelten personenbezogenen Daten automatisch
-      gespeichert. Solche auf freiwilliger Basis von einer betroffenen Person an
-      den für die Verarbeitung Verantwortlichen übermittelten personenbezogenen
-      Daten werden für Zwecke der Bearbeitung oder der Kontaktaufnahme zur
-      betroffenen Person gespeichert. Es erfolgt keine Weitergabe dieser
-      personenbezogenen Daten an Dritte.
+      Kontaktaufnahme zu unserem Projekt sowie eine unmittelbare Kommunikation
+      mit uns ermöglichen, was ebenfalls eine allgemeine Adresse der sogenannten
+      elektronischen Post (E-Mail-Adresse) umfasst. Sofern eine betroffene
+      Person per E-Mail oder über ein Kontaktformular den Kontakt mit dem für
+      die Verarbeitung Verantwortlichen aufnimmt, werden die von der betroffenen
+      Person übermittelten personenbezogenen Daten automatisch gespeichert.
+      Solche auf freiwilliger Basis von einer betroffenen Person an den für die
+      Verarbeitung Verantwortlichen übermittelten personenbezogenen Daten werden
+      für Zwecke der Bearbeitung oder der Kontaktaufnahme zur betroffenen Person
+      gespeichert. Es erfolgt keine Weitergabe dieser personenbezogenen Daten an
+      Dritte.
     </p>
 
     <h2>7. Routinemäßige Löschung und Sperrung von personenbezogenen Daten</h2>
@@ -505,8 +505,8 @@
 
         <p>
           Wurden die personenbezogenen Daten von der Vertrauensgesellschaft e.V.
-          öffentlich gemacht und ist unser Unternehmen als Verantwortlicher
-          gemäß Art. 17 Abs. 1 DS-GVO zur Löschung der personenbezogenen Daten
+          öffentlich gemacht und ist unser Projekt als Verantwortlicher gemäß
+          Art. 17 Abs. 1 DS-GVO zur Löschung der personenbezogenen Daten
           verpflichtet, so trifft die Vertrauensgesellschaft e.V. unter
           Berücksichtigung der verfügbaren Technologie und der
           Implementierungskosten angemessene Maßnahmen, auch technischer Art, um
@@ -713,7 +713,7 @@
     </ul>
     <h2>9. Rechtsgrundlage der Verarbeitung</h2>
     <p>
-      Art. 6 I lit. a DS-GVO dient unserem Unternehmen als Rechtsgrundlage für
+      Art. 6 I lit. a DS-GVO dient unserem Projekt als Rechtsgrundlage für
       Verarbeitungsvorgänge, bei denen wir eine Einwilligung für einen
       bestimmten Verarbeitungszweck einholen. Ist die Verarbeitung
       personenbezogener Daten zur Erfüllung eines Vertrags, dessen
@@ -724,8 +724,8 @@
       b DS-GVO. Gleiches gilt für solche Verarbeitungsvorgänge die zur
       Durchführung vorvertraglicher Maßnahmen erforderlich sind, etwa in Fällen
       von Anfragen zur unseren Produkten oder Leistungen. Unterliegt unser
-      Unternehmen einer rechtlichen Verpflichtung durch welche eine Verarbeitung
-      von personenbezogenen Daten erforderlich wird, wie beispielsweise zur
+      Projekt einer rechtlichen Verpflichtung durch welche eine Verarbeitung von
+      personenbezogenen Daten erforderlich wird, wie beispielsweise zur
       Erfüllung steuerlicher Pflichten, so basiert die Verarbeitung auf Art. 6 I
       lit. c DS-GVO. In seltenen Fällen könnte die Verarbeitung von
       personenbezogenen Daten erforderlich werden, um lebenswichtige Interessen
@@ -738,14 +738,14 @@
       könnten Verarbeitungsvorgänge auf Art. 6 I lit. f DS-GVO beruhen. Auf
       dieser Rechtsgrundlage basieren Verarbeitungsvorgänge, die von keiner der
       vorgenannten Rechtsgrundlagen erfasst werden, wenn die Verarbeitung zur
-      Wahrung eines berechtigten Interesses unseres Unternehmens oder eines
-      Dritten erforderlich ist, sofern die Interessen, Grundrechte und
-      Grundfreiheiten des Betroffenen nicht überwiegen. Solche
-      Verarbeitungsvorgänge sind uns insbesondere deshalb gestattet, weil sie
-      durch den Europäischen Gesetzgeber besonders erwähnt wurden. Er vertrat
-      insoweit die Auffassung, dass ein berechtigtes Interesse anzunehmen sein
-      könnte, wenn die betroffene Person ein Kunde des Verantwortlichen ist
-      (Erwägungsgrund 47 Satz 2 DS-GVO).
+      Wahrung eines berechtigten Interesses unseres Projektes oder eines Dritten
+      erforderlich ist, sofern die Interessen, Grundrechte und Grundfreiheiten
+      des Betroffenen nicht überwiegen. Solche Verarbeitungsvorgänge sind uns
+      insbesondere deshalb gestattet, weil sie durch den Europäischen
+      Gesetzgeber besonders erwähnt wurden. Er vertrat insoweit die Auffassung,
+      dass ein berechtigtes Interesse anzunehmen sein könnte, wenn die
+      betroffene Person ein Kunde des Verantwortlichen ist (Erwägungsgrund 47
+      Satz 2 DS-GVO).
     </p>
 
     <h2>
@@ -781,23 +781,22 @@
       erforderlich sein, dass eine betroffene Person uns personenbezogene Daten
       zur Verfügung stellt, die in der Folge durch uns verarbeitet werden
       müssen. Die betroffene Person ist beispielsweise verpflichtet uns
-      personenbezogene Daten bereitzustellen, wenn unser Unternehmen mit ihr
-      einen Vertrag abschließt. Eine Nichtbereitstellung der personenbezogenen
-      Daten hätte zur Folge, dass der Vertrag mit dem Betroffenen nicht
-      geschlossen werden könnte. Vor einer Bereitstellung personenbezogener
-      Daten durch den Betroffenen muss sich der Betroffene an einen unserer
-      Mitarbeiter wenden. Unser Mitarbeiter klärt den Betroffenen
-      einzelfallbezogen darüber auf, ob die Bereitstellung der personenbezogenen
-      Daten gesetzlich oder vertraglich vorgeschrieben oder für den
-      Vertragsabschluss erforderlich ist, ob eine Verpflichtung besteht, die
-      personenbezogenen Daten bereitzustellen, und welche Folgen die
-      Nichtbereitstellung der personenbezogenen Daten hätte.
+      personenbezogene Daten bereitzustellen, wenn unser Projekt mit ihr einen
+      Vertrag abschließt. Eine Nichtbereitstellung der personenbezogenen Daten
+      hätte zur Folge, dass der Vertrag mit dem Betroffenen nicht geschlossen
+      werden könnte. Vor einer Bereitstellung personenbezogener Daten durch den
+      Betroffenen muss sich der Betroffene an einen unserer Mitarbeiter wenden.
+      Unser Mitarbeiter klärt den Betroffenen einzelfallbezogen darüber auf, ob
+      die Bereitstellung der personenbezogenen Daten gesetzlich oder vertraglich
+      vorgeschrieben oder für den Vertragsabschluss erforderlich ist, ob eine
+      Verpflichtung besteht, die personenbezogenen Daten bereitzustellen, und
+      welche Folgen die Nichtbereitstellung der personenbezogenen Daten hätte.
     </p>
 
     <h2>13. Bestehen einer automatisierten Entscheidungsfindung</h2>
     <p>
-      Als verantwortungsbewusstes Unternehmen verzichten wir auf eine
-      automatische Entscheidungsfindung oder ein Profiling.
+      Als verantwortungsbewusstes Projekt verzichten wir auf eine automatische
+      Entscheidungsfindung oder ein Profiling.
     </p>
 
     <p>
