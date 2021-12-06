@@ -17,7 +17,7 @@
         <div
           style="cursor: pointer"
           class="placeholderWrapper"
-          @click="showVideo = true"
+          @click="handlePlay()"
           v-if="!showVideo"
         >
           <div class="overlay"></div>
@@ -84,6 +84,22 @@ export default {
       showVideo: false,
       animate: false,
     };
+  },
+  methods: {
+    handlePlay() {
+      this.showVideo = true;
+      // wait for next tick to have videoRef available in the DOM
+      setTimeout(() => {
+        this.$refs.videoRef.addEventListener(
+          'ended',
+          this.handlePlaybackEnd,
+          false
+        );
+      }, 0);
+    },
+    handlePlaybackEnd() {
+      this.showVideo = false;
+    },
   },
 };
 </script>
