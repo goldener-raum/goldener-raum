@@ -14,6 +14,8 @@
     <p>
       Kontakt:
       <br />
+      Falk Zientz, goldener-raum@gls.de
+      <br />
       support@expedition-grundeinkommen.de
     </p>
     <br />

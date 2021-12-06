@@ -52,6 +52,12 @@
       v-model="newSub.email"
     />
 
+    <p>
+      <a class="body text-center" href="/datenschutz">
+        Hinweise zum Datenschutz
+      </a>
+    </p>
+
     <w-flex class="mt6" justify-space-around>
       <w-button
         v-show="false"

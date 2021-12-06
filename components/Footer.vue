@@ -9,8 +9,14 @@
           Impressum
         </a>
       </b>
+      <b>
+        <a class="mx2" style="text-decoration: underline" href="/datenschutz">
+          Datenschutz
+        </a>
+      </b>
+      <p class="mt8 mb2">Kontakt: goldener-raum@gls.de</p>
     </w-flex>
-    <div class="pa8" style="position: absolute: left: 0">
+    <!-- <div class="pa8" style="position: absolute: left: 0">
       <p class="py8" :style="$waveui.breakpoint.xs && 'font-size: 0.7rem'">
         Mit freundlicher Unterstützung:
       </p>
@@ -22,7 +28,7 @@
           <w-image :ratio="163 / 500" :src="`/logos/xbge-logo.png`" />
         </div>
       </w-flex>
-    </div>
+    </div> -->
   </div>
 </template>
 
