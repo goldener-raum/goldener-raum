@@ -59,7 +59,7 @@
           <div class="placeholderVideo">
             <video
               ref="videoRef"
-              src="video/trailer.mp4"
+              src="video/goldener-raum.mp4"
               id="video-container"
               width="100%"
               autoplay
