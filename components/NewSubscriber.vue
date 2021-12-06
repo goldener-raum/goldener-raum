@@ -8,28 +8,26 @@
         : 'width: 25rem; margin: 5rem auto 10rem'
     "
   >
+    <div v-if="!newSub.useNickname">
+      <w-input
+        :validators="[validators.required]"
+        required
+        class="mb6"
+        color="black"
+        label="Vorname"
+        v-model="newSub.surname"
+      />
+      <w-input
+        :validators="[validators.required]"
+        required
+        class="mb6"
+        color="black"
+        label="Nachname"
+        v-model="newSub.lastname"
+      />
+    </div>
     <w-input
-      :validators="[validators.required]"
-      required
-      class="mb6"
-      color="black"
-      label="Vorname"
-      v-model="newSub.surname"
-    />
-    <w-input
-      :validators="[validators.required]"
-      required
-      class="mb6"
-      color="black"
-      label="Nachname"
-      v-model="newSub.lastname"
-    />
-
-    <w-checkbox class="mb6" color="black" v-model="newSub.useNickname">
-      Ich möchte ein Pseudonym verwenden
-    </w-checkbox>
-    <w-input
-      v-if="newSub.useNickname"
+      v-else
       :validators="[validators.required]"
       required
       class="mb6"
@@ -37,6 +35,10 @@
       label="Pseudonym"
       v-model="newSub.nickname"
     />
+
+    <w-checkbox class="mb6" color="black" v-model="newSub.useNickname">
+      Ich möchte ein Pseudonym verwenden
+    </w-checkbox>
 
     <w-checkbox class="mb6" color="black" v-model="newSub.newsletterConsent">
       Gerne möchte ich weitere Infos erhalten
@@ -53,7 +55,6 @@
     <w-flex class="mt6" justify-space-around>
       <w-button
         v-show="false"
-        :disabled="!(newSub.surname || newSub.lastname || newSub.email)"
         xl
         bg-color="error"
         type="reset"
@@ -113,12 +114,13 @@ export default {
     newSubscriber() {
       const newSubscriber = {
         createdAt: this.$fireModule.firestore.FieldValue.serverTimestamp(),
-        surname: this.newSub.surname,
-        lastname: this.newSub.lastname,
       };
       if (this.newSub.useNickname) {
         newSubscriber.useNickname = this.newSub.useNickname;
         newSubscriber.nickname = this.newSub.nickname;
+      } else {
+        newSubscriber.surname = this.newSub.surname;
+        newSubscriber.lastname = this.newSub.lastname;
       }
       if (this.newSub.newsletterConsent) {
         newSubscriber.email = this.newSub.email;
