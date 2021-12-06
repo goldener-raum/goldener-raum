@@ -3,23 +3,24 @@
     <h1>FAQ</h1>
     <h2>Wer ist im Goldenen Raum aktiv?</h2>
     <p>
-      Zum Start im Oktober 2021 kamen etwa 40 Menschen zusammen: Aktivist*innen
-      und Unterstützer*innen, manche mit privilegierten Herkünften, anderen
-      haben auch schon mal auf der Straße gelebt. Einige stehen noch vor dem
-      Berufseinstieg, andere gehören älteren Generationen an. 12 Aktivist*innen
-      gaben Einblicke aus ihrer Arbeit, und mit viel Gold wurden gemeinsame
-      Begegnungen zelebriert. Seither trifft sich eine Kerngruppe regelmäßig,
-      tauscht sich über die Aktivitäten und die eigenen Bedarfe aus und bereitet
-      weitere Events vor. Unterstützt wird der goldene Raum auch von der GLS
-      Bank und Organisationen der Aktivist*innen.
+      Zum Start im Oktober 2021 kamen etwa 40 Menschen zu einem künstlerischen
+      Event zusammen: Aktivist*innen und Unterstützer*innen, manche mit
+      privilegierten Herkünften, anderen haben auch schon mal auf der Straße
+      gelebt. Einige stehen noch vor dem Berufseinstieg, andere gehören älteren
+      Generationen an. 12 Aktivist*innen gaben Einblicke aus ihrer Arbeit, und
+      mit viel Gold wurden gemeinsame Begegnungen zelebriert. Seither trifft
+      sich eine Kerngruppe regelmäßig, tauscht sich über die Aktivitäten und die
+      eigenen Bedarfe aus und bereitet die nächsten Events vor. Die Idee soll in
+      den nächsten Jahren weiter organisch wachsen. Unterstützt wird der goldene
+      Raum auch von der GLS Bank und von Organisationen der Aktivist*innen.
     </p>
 
     <h2>Geht es um Geld im goldenen Raum?</h2>
     <p>
       Ja - die Aktivist*innen des goldenen Raumes verfügen gemeinschaftlich über
       ein Budget für ihre Aktivitäten. Sobald genügend Mittel vorhanden sind
-      wird auch für ein Grundeinkommen ausgezahlt. Dafür wurde im goldenen Raum
-      ein Generationenfonds gegründet, in den alle Aktivist*innen und
+      wird auch ein Grundeinkommen ausgezahlt. Dafür wurde im goldenen Raum ein
+      Generationenfonds gegründet, in den alle Aktivist*innen und
       Unterstützer*innen mindestens ein Promille ihres Einkommens einzahlen. Das
       können mal 30 Cent im Monat sein, oder auch 10 Euro und mehr. Auch
       Einmalbeträge sind willkommen. Über Auszahlungen entscheidet die
@@ -38,21 +39,21 @@
     <h2>Wo ist der goldene Raum angesiedelt?</h2>
     <p>
       Für die Begegnung auf Augenhöhe kreieren wir immer wieder goldene Räume
-      und laden Interessierte dazu ein. Die Events fanden bislang in Berlin und
-      Brandenburg statt, vierzehntätig gibt es einen offenen Online-Austausch.
-      Die Einzahlungen zur Unterstützung werden von der Kerngruppe der
-      Aktivist*innen gemeinschaftlich auf der Plattform elinor.network -
-      demokratisch und transparent für alle Beteiligten.
+      und laden Interessierte dazu ein. Die künstlerischen Events fanden bislang
+      in Berlin und Brandenburg statt, vierzehntätig gibt es einen offenen
+      Online-Austausch. Die Einzahlungen zur Unterstützung werden von der
+      Kerngruppe der Aktivist*innen gemeinschaftlich auf der Plattform
+      elinor.network - demokratisch und transparent für alle Beteiligten.
     </p>
 
     <h2>Wie kann ich den goldenen Raum unterstützen?</h2>
     <p>
       Mindestens ein Promille vom eigenen Einkommen zahlen sowohl die
       Aktivist*innen als auch die Unterstützer*innen monatlich ein. Das können
-      30 Cent sein oder über 10 EUR - ganz auf Augenhöhe leisten alle ihren
+      30 Cent sein oder über 10 EUR - ganz auf Augenhöhe leisten so alle ihren
       Beitrag zur solidarischen Unterstützung. Auch Einmalbeträge sind
       willkommen. Sie wollen nicht nur finanziell unterstützen, sondern auch
-      Infos und Einladungen erhalten? Dann tragen sie sich in das goldene Buch
+      Infos und Einladungen erhalten? Dann tragen Sie sich in das goldene Buch
       ein.
     </p>
 
@@ -71,7 +72,9 @@
       effektiv in den Beruf einzusteigen. Die Bezeichnung „golden“ will
       demgegenüber das Potenzial dieser Zeit deutlich machen. Außerdem steht der
       goldene Raum für gelebte Diversität und Inklusion von Menschen aus
-      unterschiedlichen Herkünften und Bildungserfahrungen.
+      unterschiedlichen Herkünften und Bildungserfahrungen. Das findet auch in
+      den künstlerischen Events seinen Ausdruck, die vom Künstler*innenkollektiv
+      Kernkraft mitgestaltet werden.
     </p>
 
     <h2>Wie entstand die Idee zum goldenen Raum?</h2>
@@ -102,9 +105,12 @@
       Potenzialentfaltung und Selbstwirksamkeit. Einzelpersonen können im
       Unterschied zu Organisationen aber nicht gemeinnützig sein, weshalb die
       Unterstützer*innen keine Spendenbescheinigung bekommen. Dafür fließt die
-      Unterstützung direkt an die Aktivist*innen, die selbstorganisiert und
-      transparent auf elinor.network über die Auszahlungen entscheiden. Die
-      Unterstützer*innen können – soweit sie das wünschen – in direkten
+      Unterstützung ohne organisatorischen Overhead ganz direkt an die
+      Aktivist*innen, die selbstorganisiert und transparent auf elinor.network
+      über die Auszahlungen entscheiden.
+    </p>
+    <p>
+      Die Unterstützer*innen können – soweit sie das wünschen – in direkten
       Austausch mit den Aktvist*innen kommen, auf Events oder digital. Alle
       zahlen auf Augenhöhe 1 Promille ihres Einkommens ein. Das verbindet.
     </p>

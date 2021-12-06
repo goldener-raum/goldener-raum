@@ -19,10 +19,11 @@
           />
           <p class="grow">
             Für die Begegnung auf Augenhöhe kreieren wir immer wieder goldene
-            Räume und laden Interessierte dazu ein. Es geht um
-            Potenzialentfaltung, um das Erleben von Selbstwirksamkeit und darum,
-            mit Menschen aus anderen Herkünften und sozialen Hintergründen in
-            Verbindung zu kommen.
+            Räume als künstlerische Events und laden Interessierte dazu ein. Die
+            Idee soll in den nächsten Jahren weiter organisch wachsen. Es geht
+            um Potenzialentfaltung, um das Erleben von Selbstwirksamkeit und
+            darum, mit Menschen aus anderen Herkünften und sozialen
+            Hintergründen in Verbindung zu kommen.
           </p>
         </w-flex>
       </div>
@@ -50,8 +51,9 @@
               Arbeit, und mit viel Gold wurden gemeinsame Begegnungen
               zelebriert. Seither trifft sich eine Kerngruppe regelmäßig,
               tauscht sich über die Aktivitäten und die eigenen Bedarfe aus und
-              bereitet weitere Events vor. Unterstützt wird der goldene Raum
-              auch von der GLS Bank und Organisationen der Aktivist*innen.
+              bereitet weitere künstlerische Events vor. Unterstützt wird der
+              goldene Raum auch von der GLS Bank und Organisationen der
+              Aktivist*innen.
             </p>
           </div>
           <div
