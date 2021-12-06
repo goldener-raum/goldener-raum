@@ -49,7 +49,7 @@ export default {
         },
         {
           title:
-            'Kiara und Leo, Haus am Wald: "Wir schaffen einen Ort für Alleinerziehende und Familien in Gemeinschaft."',
+            'Kiara und Leo, Haus am Wald / Karuna Sozialgenossenschaft: "Wir schaffen einen Ort für Alleinerziehende und Familien in Gemeinschaft."',
           image: require('@/assets/slider/goldener-raum-kiara-leo.png'),
         },
       ],

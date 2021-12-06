@@ -4,7 +4,6 @@
       <Video />
     </BlobSection>
     <div class="width: 100%">
-      <a name="about" class="anchorOffset"></a>
       <div
         style="margin-top: 7.5rem; margin-bottom: 5rem"
         :class="

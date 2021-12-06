@@ -39,6 +39,7 @@
       >
         <w-flex basis-zero>
           <div class="grow">
+            <a name="about" class="anchorOffset"></a>
             <h2 class="headline mt8 mb4 mr8 white" :style="getFontSize">
               Wir sind der Goldene Raum
             </h2>

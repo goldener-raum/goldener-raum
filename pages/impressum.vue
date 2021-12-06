@@ -35,19 +35,6 @@
     <br />
 
     <p>
-      Spenden:
-      <br />
-      Empfängerin: Vertrauensgesellschaft e. V.
-      <br />
-      IBAN: DE74 4306 0967 1218 1056 01 BIC: GENODEM1GLS
-      <br />
-      Bank: GLS Gemeinschaftsbank eG
-      <br />
-      Verwendungszweck: Spende
-    </p>
-    <br />
-
-    <p>
       Registereintrag: Eintragung im Vereinsregister.
       <br />
       Registergericht: Amtsgericht Charlottenburg

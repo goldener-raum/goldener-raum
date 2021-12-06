@@ -56,7 +56,7 @@
       * Ich bin damit einverstanden, dass die Vertrauensgesellschaft e.V. mich
       mit Neuigkeiten per E-Mail kontaktiert.
       <a class="body text-center lh1" href="/datenschutz">
-        Hinweise zum Datenschutz findeen Sie hier!
+        Hinweise zum Datenschutz finden Sie hier!
       </a>
     </p>
 

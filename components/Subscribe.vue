@@ -14,8 +14,7 @@
         <w-flex basis-zero>
           <div class="grow">
             <p class="py4">
-              Hier findest du die Namen aller Menschen, die Teil des goldenen
-              Raumes sind.
+              Hier eintragen und Teil des goldenen Raumes werden.
             </p>
           </div>
           <div
