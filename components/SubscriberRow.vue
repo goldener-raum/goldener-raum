@@ -2,7 +2,7 @@
   <div>
     <w-flex v-if="!subscriber.useNickname" class="justify-center">
       <p>{{ subscriber.surname }}</p>
-      <p class="ml2">{{ subscriber.lastname }}</p>
+      <p v-if="subscriber.lastname" class="ml2">{{ subscriber.lastname }}</p>
     </w-flex>
     <w-flex v-else class="justify-center">
       <p>{{ subscriber.nickname }}</p>

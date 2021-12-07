@@ -39,7 +39,7 @@ export default {
       slides: [
         {
           title:
-            'Trace Abenaa, Demokratische Stimme der Jugend: "Ich gestalte Freiräume, in denen junge Menschen ihre Schöpfer*innenkraft entdecken können."',
+            'Tracy Abenaa, Demokratische Stimme der Jugend: "Ich gestalte Freiräume, in denen junge Menschen ihre Schöpfer*innenkraft entdecken können."',
           image: require('@/assets/slider/goldener-raum-tracy.png'),
         },
         {

@@ -18,7 +18,6 @@
         v-model="newSub.surname"
       />
       <w-input
-        :validators="[validators.required]"
         required
         class="mb6"
         color="black"
@@ -128,7 +127,9 @@ export default {
         newSubscriber.nickname = this.newSub.nickname;
       } else {
         newSubscriber.surname = this.newSub.surname;
-        newSubscriber.lastname = this.newSub.lastname;
+        if (this.newSub.lastname) {
+          newSubscriber.lastname = this.newSub.lastname;
+        }
       }
       if (this.newSub.newsletterConsent) {
         newSubscriber.email = this.newSub.email;
