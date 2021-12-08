@@ -41,9 +41,10 @@
       Für die Begegnung auf Augenhöhe kreieren wir immer wieder goldene Räume
       und laden Interessierte dazu ein. Die künstlerischen Events fanden bislang
       in Berlin und Brandenburg statt, vierzehntätig gibt es einen offenen
-      Online-Austausch. Die Einzahlungen zur Unterstützung werden von der
+      Online-Austausch. Die Auszahlungen zur Unterstützung werden von der
       Kerngruppe der Aktivist*innen gemeinschaftlich auf der Plattform
-      elinor.network - demokratisch und transparent für alle Beteiligten.
+      elinor.network entschieden - demokratisch und transparent für alle
+      Beteiligten.
     </p>
 
     <h2>Wie kann ich den goldenen Raum unterstützen?</h2>
