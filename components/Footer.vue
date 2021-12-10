@@ -14,7 +14,31 @@
           Datenschutz
         </a>
       </b>
-      <p class="mt8 mb2">Kontakt: goldener-raum@gls.de</p>
+
+      <div class="mt4 mb2">
+        <a
+          href="https://de-de.facebook.com/DerGoldeneRaum/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media"
+        >
+          <w-icon color="black" :style="`font-size: 2.5rem`">
+            mdi mdi-facebook
+          </w-icon>
+        </a>
+        <a
+          href="https://de-de.facebook.com/DerGoldeneRaum/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media"
+        >
+          <w-icon color="black" :style="`font-size: 2.5rem`">
+            mdi mdi-instagram
+          </w-icon>
+        </a>
+      </div>
+
+      <p class="mt2 mb2">Kontakt: goldener-raum@gls.de</p>
     </w-flex>
     <!-- <div class="pa8" style="position: absolute: left: 0">
       <p class="py8" :style="$waveui.breakpoint.xs && 'font-size: 0.7rem'">
@@ -36,4 +60,12 @@
 export default {};
 </script>
 
-<style scoped></style>
+<style scoped>
+.social-media:hover {
+  text-decoration: none;
+}
+
+.social-media:hover i {
+  color: #33408e;
+}
+</style>
