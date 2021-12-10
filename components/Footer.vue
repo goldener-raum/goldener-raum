@@ -27,7 +27,7 @@
           </w-icon>
         </a>
         <a
-          href="https://de-de.facebook.com/DerGoldeneRaum/"
+          href="https://www.instagram.com/goldener.raum/"
           target="_blank"
           rel="noopener noreferrer"
           class="social-media"
