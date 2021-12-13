@@ -78,6 +78,17 @@
       Kernkraft mitgestaltet werden.
     </p>
 
+    <h2>Ist der goldene Raum "politisch"?</h2>
+    <p>
+      Um Parteipolitik geht es im goldenen Raum nicht, aber um das Organisieren,
+      Gestalten, Transformieren von Gesellschaft. Die aktuellen Krisen zeigen
+      die Notwendigkeit, innerhalb der planetarer Grenzen zu leben und für
+      Gerechtigkeit auch in unseren globalen Beziehungen zu kämpfen. Ein
+      Bewusstsein für diese Ziele ist bereits bei vielen Menschen vorhanden. Mit
+      dem Goldenen Raum setzen uns für eine politische Umsetzung ein. Denn wir
+      können besser, gesünder und verbundener mit Mensch und Natur leben.
+    </p>
+
     <h2>Wie entstand die Idee zum goldenen Raum?</h2>
     <p>
       In Berlin-Neukölln hinterm Karstadt am Hermannplatz betreibt die Karuna
