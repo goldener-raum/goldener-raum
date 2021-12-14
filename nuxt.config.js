@@ -1,5 +1,8 @@
 const descriptionMeta =
   'Die Welt zu einem schöneren und nachhaltigeren Ort machen – dafür unterstützen sich Menschen gegenseitig hier im goldenen Raum.';
+const imageMeta = `${
+  process.env.baseUrl || 'http://localhost:3000/'
+}meta/preview.png`;
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -11,6 +14,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'title', name: 'title', content: 'Goldener Raum' },
       { hid: 'og:title', name: 'og:title', content: 'Goldener Raum' },
       {
         hid: 'description',
@@ -23,9 +27,19 @@ export default {
         content: descriptionMeta,
       },
       {
+        hid: 'image',
+        property: 'image',
+        content: imageMeta,
+      },
+      {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://www.goldenerraum.de/meta/preview.png',
+        content: imageMeta,
+      },
+      {
+        hid: 'twitter:image',
+        property: 'twitter:image',
+        content: imageMeta,
       },
       { name: 'format-detection', content: 'telephone=no' },
       {
@@ -38,7 +52,7 @@ export default {
   },
 
   publicRuntimeConfig: {
-    baseUrl: process.env.baseUrl || 'http://localhost:3000',
+    baseUrl: process.env.baseUrl || 'http://localhost:3000/',
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

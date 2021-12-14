@@ -13,7 +13,7 @@ export default {
   },
   computed: {
     imageSource() {
-      return `${this.$config.baseUrl}/landingpage/${this.filename}`;
+      return `${this.$config.baseUrl}landingpage/${this.filename}`;
     },
   },
 };
